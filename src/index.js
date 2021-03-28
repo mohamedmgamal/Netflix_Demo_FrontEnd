@@ -8,7 +8,7 @@ import Phone from './components/phone_varification/phone';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Phone />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
