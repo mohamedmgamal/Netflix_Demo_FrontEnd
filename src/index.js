@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Phone from './components/phone_varification/phone';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Phone />
   </React.StrictMode>,
   document.getElementById('root')
 );
