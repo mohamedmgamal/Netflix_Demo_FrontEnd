@@ -1,0 +1,21 @@
+
+
+  .main{
+      max-width: 800px;
+      margin-top: 5%;
+  }
+  .in{
+      max-width: 600;
+  }
+  .sec{
+      background-color: #dddddd;
+      padding: 15px;
+      border-radius: 5px;
+  }
+  .btn{
+     margin-top: 5px;
+     margin-bottom: 5px;
+  }
+  .hed{
+      color: #536162;
+  }
