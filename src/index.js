@@ -10,7 +10,7 @@ import Choose from './components/choose category/choose';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Choose />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
