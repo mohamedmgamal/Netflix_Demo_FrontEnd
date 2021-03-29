@@ -84,7 +84,7 @@ class Phone extends Component {
                             <h6 className="text-center hed" >SETUP PASSWORD RECOVERY</h6>
                           <p>Your phone number will be used if you forget your password and for important account message</p>
                           <p></p>
-                          <form method="POST" onSubmit={this.onSignInSubmit}>
+                          <form  onSubmit={this.onSignInSubmit}>
                              
                               <div className="form-group">
                                   <label>Phone Number</label>
@@ -101,7 +101,7 @@ class Phone extends Component {
                                 
                           </form>   
                           
-                          <form method="POST" onSubmit={this.onSubmitOtp}>
+                          <form  onSubmit={this.onSubmitOtp}>
                              
                               <div className="form-group">
                                   <label>Please Enter OTP</label>
