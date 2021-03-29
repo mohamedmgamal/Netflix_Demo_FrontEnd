@@ -4,6 +4,7 @@
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/phone_varification/phone.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/phone_varification/phone.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +66,14 @@
       <workItem from="1616860240471" duration="5000" />
       <workItem from="1616865089236" duration="361000" />
       <workItem from="1616865537642" duration="23000" />
+      <workItem from="1616865639172" duration="24000" />
+      <workItem from="1616894409477" duration="3000" />
+      <workItem from="1616931073203" duration="1310000" />
+      <workItem from="1616932720335" duration="12000" />
+      <workItem from="1616945990719" duration="59000" />
+      <workItem from="1616965345558" duration="1477000" />
+      <workItem from="1617025853929" duration="1415000" />
+      <workItem from="1617028703311" duration="992000" />
     </task>
     <servers />
   </component>

@@ -61,7 +61,8 @@ class Phone extends Component {
                   .then(function (result) {
                     // User signed in successfully.
                      console.log("Number is Verified");
-                     
+                      // this.props.history.push( {pathname: '/',
+                      //     data : "this is data from Phone Auth to Home component " })
                     let user = result.user;
                   })
                   .catch(function (error) {
