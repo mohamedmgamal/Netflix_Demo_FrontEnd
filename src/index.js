@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 import Phone from './components/phone_varification/phone';
 
+import Choose from './components/choose category/choose';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Choose />
   </React.StrictMode>,
   document.getElementById('root')
 );
