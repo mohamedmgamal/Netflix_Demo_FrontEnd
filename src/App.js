@@ -11,6 +11,7 @@ import {
   Link,
     Redirect,
 } from "react-router-dom";
+import Choose from "./components/choose category/choose";
 function App() {
   if (localStorage.token)
     return <h1>logged in</h1>//you are logged in go to main
@@ -23,9 +24,13 @@ export default App
 export function NoAuth(){
       return (
       <Router>
-          <Redirect to={'/PhoneVerification'}/>
+        <ul>
+          <li>  <Link to={"/PhoneVerification"}>PhoneVerification</Link></li>
+        <li> <Link to={"/favorites"}>favorites</Link></li>
+      </ul>
         <Switch>
           <Route path="/PhoneVerification" component={Phone}/>
+          <Route path="/favorites" component={Choose}/>
         </Switch>
       </Router>
   );

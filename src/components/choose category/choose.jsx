@@ -69,7 +69,7 @@ class Image extends Component {
             this.setState({active: !this.state.active})
             }} >
                 <img src={this.props.src}  width="100%" height="300px" alt=""/>
-                <div className={this.state.active && 'over'}>
+                <div className={this.state.active ? 'over' :'hidden' }>
                             <i className="fa fa-thumbs-up  ic"></i>
                 </div>
             </button>
