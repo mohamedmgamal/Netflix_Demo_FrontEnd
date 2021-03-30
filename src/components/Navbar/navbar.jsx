@@ -1,19 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import '../components/navbar.css';
+import './navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	const [show, handleShow] = useState(false);
-	useEffect(() => {
-		window.addEventListener('scroll', () => {
-			if (window.scrollY > 100) {
-				handleShow(true);
-			} else handleShow(false);
-		});
-		return () => {
-			window.removeEventListener('scroll');
-		};
-	}, []);
 
 	return (
 		<nav className={`nav ${show && 'navblack'}`}>

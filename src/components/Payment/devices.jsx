@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../components/devices.css';
+import './devices.css';
 
 class Devices extends Component {
     state = {  };

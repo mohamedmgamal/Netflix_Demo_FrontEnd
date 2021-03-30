@@ -64,7 +64,7 @@
 {
     position: absolute;
     left: 43.5%;
-    top: 78%;
+    top: 100%;
     color: navy;
     padding: 2px;
     cursor: pointer;
@@ -74,7 +74,7 @@
     color: red;
     position: absolute;
     left: 46.3%;
-    top: 78%;
+    top: 100%;
     padding: 2px;
     cursor: pointer;
 }
@@ -89,14 +89,14 @@
 .form1 .fa-chevron-right
 {
     left: 64%;
-    top: 79.1%;
+    top: 102%;
     color:rgba(128, 128, 128, 0.466);
 }
 .form1 #bottomright
 {
     color:rgba(128, 128, 128, 0.466);
     left: 64%;
-    top: 88%;
+    top: 109.5%;
 }
 @media(max-width: 767px)
 {
