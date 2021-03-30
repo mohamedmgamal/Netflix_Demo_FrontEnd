@@ -1,0 +1,170 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: Cairo-light;
+}
+.body1{
+    margin-left: 25%;
+}
+@font-face{
+    font-family: Cairo-Bold;
+    src: url(./fonts/Cairo-Bold.ttf);
+}
+@font-face{
+    font-family: Cairo-light;
+    src: url(./fonts/Cairo-Bold.ttf);
+}
+.container{
+    width: 65%;
+    padding-right: 5%;
+}
+.first{
+    height: 110px;
+    border-bottom: 2px solid grey;
+}
+#netflixlogo{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 10%;
+    height: 60px;
+}
+#loginbutton{
+    font-family: Cairo-Bold;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    /* width: 135px; */
+    height: 50px;
+}
+.exp{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    height: 180px;
+}
+/* .exp3{
+    background-color: greenyellow;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.exp2{
+    width: 120px;
+    background-color: green;
+    height: 100px;
+    height: -50px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+.firstrw{
+    margin-top: 30px;
+}
+.firstrw h4{
+    font-family: Cairo-bold;
+}
+#firstsquare{
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    padding-top: 45px;
+    background-color: rgb(190, 87, 87);
+    height: 120px;
+}
+#secondsquare{
+    cursor: pointer;
+    margin-right: -2px;
+    color: white;
+    border-radius: 10px;
+    padding-top: 45px;
+    background-color: rgb(190, 87, 87);
+    height: 120px;
+}
+#thirdsquare{
+    cursor: pointer;
+    margin-right: -2px;
+    color: white;
+    border-radius: 10px;
+    padding-top: 45px;
+    background-color: red;
+    height: 120px;
+}
+#firstcol1 ,#firstcol2 ,#firstcol3 ,#firstcol4 , #firstcol5 , #firstcol6 ,#firstcol7{
+    color: gray;
+}
+#secondsquare1 ,#secondsquare2 ,#secondsquare3 ,#secondsquare4 , #secondsquare5 , #secondsquare6 ,#secondsquare7{
+    color: gray;
+}
+#thirdsquare1 ,#thirdsquare2 ,#thirdsquare3 ,#thirdsquare4 , #thirdsquare5 , #thirdsquare6 ,#thirdsquare7{
+    color: red;
+}
+.firstcol{
+    color: gray;
+}
+.lastrw{
+    line-height: 80px;
+    border-bottom: 1px solid grey;
+
+}
+.lastrw h3{
+    font-family: Cairo-light;
+    text-align: left;
+    margin-right: 0%;
+    font-size: 14px;
+    padding-top: 30px;
+}
+.txtrw p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+.txtrw a{
+    text-decoration: none;
+}
+.butclass{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#subbut{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-height: 48px;
+    font-weight: 400;
+    font-size: 17px;
+    border: none;
+    outline: none !important;
+    border-radius: 2px;
+    color: white;
+    width: 350px;
+    background-color: red;
+}
+footer{
+    
+    opacity: 0.3;
+    width: 100%;
+    margin: 70px 0px 0px 0px;
+    background-color: black;
+    height: 300px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+}
+footer a:hover{
+    color: white;
+    text-decoration:underline;
+    transition: all 0.8s ease-in-out;
+}
+footer .row{
+    padding-top: 40px;
+}
+footer h5{
+    padding-top: 39px;
+}
