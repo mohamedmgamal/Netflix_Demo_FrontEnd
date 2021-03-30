@@ -1,0 +1,122 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paymentform
+{
+    margin-top: 15%;
+}
+.paymentform .step
+{
+  margin-left: 30.2%;
+}
+.paymentform h3
+{
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.icon-container .fa-cc-visa
+{
+    color: navy;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.icon-container .fa-cc-mastercard
+{
+    color: red;
+    padding: 5px;
+    cursor: pointer;
+}
+.form2 input
+{
+    margin-top: 13px;
+    width: 50%;
+    padding: 20px;
+    height: 10%;
+    margin-left: 30%;
+}
+.form2 .fa-question-circle
+{
+    position: absolute; 
+    left: 68.5%;
+    top: 83%;
+    padding: 5px;
+    cursor: pointer;
+    color:rgba(128, 128, 128, 0.466);
+}
+.form2 #ccv
+{
+    position: relative;
+}
+.premium
+{
+    width: 50%;
+    height: 70px;
+    background-color:rgba(184, 177, 177, 0.384);
+    margin-left: 30%;
+    margin-top: 13px;
+    padding: 6px;
+    border-radius: 5px;
+    position: relative;
+}
+.premium span
+{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    font-weight: bold;
+    color: rgb(105, 101, 101);
+}
+.paymentform p
+{
+    width: 46%;
+    margin-left: 30%;
+    margin-top: 35px;
+    font-size: 15px;
+}
+@media(max-width: 767px)
+{
+    .paymentform .step , .icon-container .fa-cc-visa , .form2 input , .premium , .paymentform p { margin-left: 13%; }   
+    .paymentform h3
+    {
+      font-size: 20px;
+      margin-left: -5%;
+    } 
+    .form2 input , .premium { width: 77%; }
+    .form2 .fa-question-circle
+    {
+        left: 77%;
+        top: 69.5%;
+    }
+    .premium span { font-size: 15px; }
+    .paymentform p { width: 77%; }
+}
+@media(min-width: 768px) and (max-width: 991px)
+{
+    .paymentform .step , .icon-container .fa-cc-visa , .form2 input , .premium , .paymentform p { margin-left: 17.7%; }   
+    .paymentform h3
+    {
+      font-size: 25px;
+      margin-left: -8%;
+    }
+    .form2 input , .premium { width: 70%; }
+    .form2 .fa-question-circle
+    {
+        left: 76.6%;
+        top: 75.3%;
+    }
+    .paymentform p { width: 71%; }
+}
+@media(min-width: 992px) and (max-width: 1199px)
+{
+    .paymentform .step , .icon-container .fa-cc-visa , .form2 input , .premium , .paymentform p { margin-left: 23%; }   
+    .paymentform h3 { margin-left: -7%; }
+    .form2 input , .premium { width: 55%; }
+    .form2 .fa-question-circle
+    {
+        left: 68%;
+        top: 81%;
+    }
+    .paymentform p { width: 53%; }
+}

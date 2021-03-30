@@ -1,0 +1,121 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#devices h4
+{
+    text-align: center;
+    margin-top: 15%;
+    font-weight: bold;
+}
+#devices p
+{
+    font-size: 17px;
+    margin-left: 30%;
+    width: 40%;
+}
+#devices .buttons
+{
+    margin-top: 30px;
+    margin-left: 30%;
+    width: 15%;    
+}
+#devices #tv , #devices #phone , #devices #desktop , #devices #box , 
+#devices #media , #devices #playstation , #devices #xbox , #devices #continue
+{
+    width: 470px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#devices #tv:focus , #devices #phone:focus , #devices #desktop:focus , #devices #box:focus , 
+#devices #media:focus , #devices #playstation:focus , #devices #xbox:focus 
+{
+    background-color: white;
+    color: red;
+    border: 2px solid red;      
+}
+#devices #continue
+{
+    background-color: red;
+    height: 48px;
+    text-align: center;
+}
+#devices i
+{
+    margin-right: 13px;
+    margin-left: 10px;
+}
+#devices #phone i
+{
+    margin-right: 18px;
+    margin-left: 12px;
+}
+#devices #box i
+{
+    margin-right: 15px;
+}
+#devices #media i
+{
+    margin-left: 8px;
+}
+@media(max-width: 767px)
+{
+    #devices h4
+    {
+        font-size: 20px;
+        margin-top: 25%;
+    }
+    #devices p
+    {
+        font-size: 15px;
+        margin-left: 10%;
+        width: 80%;
+    }
+    #devices .buttons
+    {
+        margin-left: 10%;
+    } 
+    #devices #tv , #devices #phone , #devices #desktop , #devices #box , 
+    #devices #media , #devices #playstation , #devices #xbox , #devices #continue
+    {
+        width: 370px;
+        height: 60px;
+        margin-bottom: 10px;
+        text-align: left;
+    }  
+    #devices #continue
+    {
+        background-color: red;
+        height: 48px;
+        text-align: center;
+    }
+    #devices #continue
+    {
+        text-align: center;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px)
+{
+    #devices p
+    {
+        margin-left: 18%;
+        width: 66%;
+    } 
+    #devices .buttons
+    {
+        margin-left: 18%;
+    } 
+}
+@media(min-width: 992px) and (max-width: 1199px)
+{
+    #devices p
+    {
+        margin-left: 26%;
+        width: 46%;
+    } 
+    #devices .buttons
+    {
+        margin-left: 26%;
+    } 
+}
