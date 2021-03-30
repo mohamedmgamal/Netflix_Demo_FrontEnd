@@ -1,0 +1,31 @@
+.row{
+    margin-right: 100px;
+    margin-top: 50px;
+}
+.center-container{
+    z-index: 1;
+    width: 45%;
+    margin-left: 30%;
+    margin-left: 30%;
+}
+.form-control{
+    margin-top: 15px;
+    height: 60px;
+}
+.header-container{
+    margin-left: 0;
+    
+}
+span{
+    margin-left: 0;
+}
+.button-container{
+   width:100% 
+}
+input.btn{
+    width:512px;
+    background-color: red;
+    height: 70px;
+}
+
+
