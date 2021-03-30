@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import Phone from './components/phone_varification/phone';
 
-import Phone from './components/phone_varification/phone';
-
-import Choose from './components/choose category/choose';
+// <<<<<<< main
+// =======
+// import Choose from './components/choose category/choose';
+// >>>>>>> main
 
 ReactDOM.render(
   <React.StrictMode>
-    <Choose />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

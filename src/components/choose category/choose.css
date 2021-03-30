@@ -51,3 +51,6 @@
 .butt{
     padding: 10px 100px;
 }
+.hidden{
+    display: none;
+}
