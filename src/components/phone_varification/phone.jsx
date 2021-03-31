@@ -26,8 +26,7 @@ class Phone extends Component {
         window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
             'size': 'normal',
             'callback': function (response) {
-              // reCAPTCHA solved, allow signInWithPhoneNumber.
-              // ...
+              
               this.onSignInSubmit();
             }
            
@@ -41,10 +40,9 @@ class Phone extends Component {
         const appVerifier = window.recaptchaVerifier;
         firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
         .then(function (confirmationResult) {
-            // SMS sent. Prompt user to type the code from the message, then sign the
-            // user in with confirmationResult.confirm(code).
+            
             window.confirmationResult = confirmationResult;
-            // console.log(confirmationResult);
+            
             console.log("OTP is sent");
           })
           .catch(function (error) {
@@ -55,14 +53,13 @@ class Phone extends Component {
                 event.preventDefault();
                 let otpInput = this.state.otp;
                 let optConfirm = window.confirmationResult;
-                // console.log(codee);
+              
                 optConfirm
                   .confirm(otpInput)
                   .then(function (result) {
-                    // User signed in successfully.
+                    
                      console.log("Number is Verified");
-                      // this.props.history.push( {pathname: '/',
-                      //     data : "this is data from Phone Auth to Home component " })
+                      
                     let user = result.user;
                   })
                   .catch(function (error) {
@@ -79,7 +76,7 @@ class Phone extends Component {
                      
                           <h1 >Welcom to Netflix!</h1>
                             <p>You've started your membership and we emaild the details to you</p>
-                            {/* <p>Remember you can cansel online anytime in the Accout section.</p> */}
+                            
                         <div className="sec">
                             <h6 className="text-center hed" >SETUP PASSWORD RECOVERY</h6>
                           <p>Your phone number will be used if you forget your password and for important account message</p>
@@ -93,7 +90,7 @@ class Phone extends Component {
                               <div id="recaptcha-container">
 
                               </div>
-                              {/* <input type="checkbox"/> Yes, I would like to receive text message  */}
+                              
                               
                               
                               <input type="submit" className="btn btn-danger btn-lg btn-block" value="Send code"/>
