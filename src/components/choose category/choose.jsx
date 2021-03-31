@@ -25,11 +25,11 @@ class Choose extends Component {
      }
 
      add=()=>{
-         if(this.state.active === true){
+         
             this.setState({
                 count:this.state.count+1
             })
-         }
+         
             
      }
     
