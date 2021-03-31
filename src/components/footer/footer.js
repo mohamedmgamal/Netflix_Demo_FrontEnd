@@ -1,14 +1,14 @@
 import React,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './footer.css';
-import {Icon} from 'react-icons-kit';
-import { iosWorld } from 'react-icons-kit/ionicons/iosWorld';
+// import {Icon} from 'react-icons-kit';
+// import { iosWorld } from 'react-icons-kit/ionicons/iosWorld';
 class Footer extends React.Component{
     
     render(){
         return(
             <React.Fragment>
-            <div className="footer col-md-12">
+            <div className="footer col-md-12" style={{height:"auto"}}>
                 
                 <div className="footer-container">
                 <div className="row line col-md-12 col-sm-8 col-xs-6">

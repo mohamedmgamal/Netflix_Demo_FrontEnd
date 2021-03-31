@@ -3,13 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Payment/devices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/devices.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Payment/payment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/payment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Payment/payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/payment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Payment/paymentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/paymentForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/step1of3/step1of3.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/step1of3/step1of3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/step1of3/step1of3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/step1of3/step1of3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/step2of3/step2of3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/step2of3/step2of3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +90,11 @@
       <workItem from="1617060755208" duration="1076000" />
       <workItem from="1617096626402" duration="1071000" />
       <workItem from="1617097710221" duration="4852000" />
+      <workItem from="1617143361323" duration="116000" />
+      <workItem from="1617145281717" duration="853000" />
+      <workItem from="1617146225946" duration="1205000" />
+      <workItem from="1617148090156" duration="304000" />
+      <workItem from="1617196486387" duration="7101000" />
     </task>
     <servers />
   </component>

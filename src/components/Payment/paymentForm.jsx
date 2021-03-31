@@ -7,7 +7,7 @@ class PaymentForm extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                <div className="container">
+                <div className="container" style={{marginRight:"auto"}}>
                     <div className="paymentform">
                         <span className="step">STEP 3 OF 3</span>
                         <h3>Set Up Your Credit Or Debit Card.</h3>
