@@ -37,17 +37,17 @@ const Navbar = () => {
 					<span>KIDS</span>
 				</li>
 				<li>
-					<i class="fas fa-gift"></i>
+					<i class="fa fa-gift"></i>
 				</li>
 				<li>
-					<i class="fas fa-bell fa-lg"></i>
+					<i class="fa fa-bell fa-lg"></i>
 				</li>
 				<li>
 					<img className='navuser'
 						src='https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png'
 						alt='Netlix-User'
 					/>
-					<i class="fas fa-caret-down"></i>
+					<i class="fa fa-caret-down"></i>
 				</li>
 			</ul>
 		</nav>

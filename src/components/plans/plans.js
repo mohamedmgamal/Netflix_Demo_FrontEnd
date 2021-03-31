@@ -2,6 +2,10 @@ import React from 'react'
 import './plans.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 class Plans extends React.Component{
+    next=()=>{
+        this.props.history.push( {pathname: '/Payment-method',
+            user :this.props.user})
+    }
     render(){
         return (
             <div className="row body1">
@@ -77,7 +81,7 @@ class Plans extends React.Component{
                 Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.</p>
         </div>
         <div className="butclass">
-           <a href="./payment.html"><input id="subbut" type="submit" name="submit" value="Continue" /></a> 
+           <input id="subbut" type="submit" name="submit" value="Continue" onClick={this.next}/>
         </div>
        
     </div>
