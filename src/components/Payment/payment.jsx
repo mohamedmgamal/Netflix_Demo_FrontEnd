@@ -19,13 +19,14 @@ class Payment extends Component {
                         Secure Server <i class="fa fa-lock"></i>
                     </span>
                     <div className="form1">
+                        
                         <input type="text" placeholder="Credit or Debit Card" className="form-control" disabled />
                         <Link to="/paymentform"> <i className="fa fa-cc-visa fa-2x"></i></Link>
                         <Link to="/paymentform"> <i className="fa fa-cc-mastercard fa-2x"></i></Link>
                         <Link  to="/paymentform" className="fa fa-chevron-right fa-lg"></Link>
                         <input type="text" placeholder="Pay Cash" className="form-control" disabled /> 
-                        <Link  to="/paymentform" className="fa fa-cc-amazon-pay fa-2x"></Link>
-                        <a  id="bottomright" className="fa fa-chevron-right fa-lg "></a>
+                        <i class="fa fa-cc-paypal fa-2x"></i>
+                        <Link  to="/paymentform" id="bottomright" className="fa fa-chevron-right fa-lg"></Link>
                     </div>
                 </div>
             </React.Fragment>

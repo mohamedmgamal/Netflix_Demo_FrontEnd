@@ -7,8 +7,8 @@
   font-size: 22px;
   font-weight: bold;
   color: red;
-  margin-left: 47%;
-  margin-top: 10%;
+  margin-left: 48%;
+  margin-top: 5%;
   padding: 15px;
   border: 2px solid;
   border-radius: 90px;
@@ -16,7 +16,7 @@
 .payment .step
 {
   display: block;
-  margin-left: 46%;
+  margin-left: 46.4%;
   margin-top: 45px;
 }
 .payment h3
@@ -37,6 +37,7 @@
 {
   width: 13%;
   margin-left: 43.3%;
+  margin-bottom: 30px;
 }
 .payment .secure
 {
@@ -50,54 +51,49 @@
 }
 .form1 input
 {
+    margin-top: 0;
     width: 34%;
     padding: 17px;
     height: 8%;
     margin-left: 32%;
     position: relative;
 }
-.form1 input[placeholder="Pay Cash"]
-{
-    margin-top: 8px;
-}
+.form1 input[placeholder="Pay Cash"] { margin-top: 8px; }
 .form1 .fa-cc-visa , .form1 .fa-chevron-right
 {
     position: absolute;
     left: 43.5%;
-    top: 100%;
+    bottom: 10.3%;
     color: navy;
     padding: 2px;
     cursor: pointer;
+    z-index: 2;
 }
 .form1 .fa-cc-mastercard
 {
     color: red;
     position: absolute;
-    left: 46.3%;
-    top: 100%;
+    left: 46.5%;
+    bottom: 10.3%;
     padding: 2px;
     cursor: pointer;
 }
-.form1 .fa-cc-amazon-pay, .form1 #bottomright
+.form1 .fa-cc-paypal
 {
     color: orange;
     position: absolute;
     left: 39%;
-    top: 86.7%;
+    bottom: 2%;
     cursor: pointer;
+    z-index: 2;
 }
-.form1 .fa-chevron-right
+.form1 .fa-chevron-right , .form1 #bottomright
 {
     left: 64%;
-    top: 102%;
+    bottom: 11.3%;
     color:rgba(128, 128, 128, 0.466);
 }
-.form1 #bottomright
-{
-    color:rgba(128, 128, 128, 0.466);
-    left: 64%;
-    top: 109.5%;
-}
+.form1 #bottomright { bottom: 2.5%; }
 @media(max-width: 767px)
 {
     .payment .lock i { margin-top: 28%; }
@@ -105,7 +101,7 @@
     .payment h3
     { 
         font-size: 25px;
-        margin-left: 5%;      
+        margin-left: 5.5%;      
     }
     .payment p
     {
@@ -115,9 +111,8 @@
     }
     .payment .num2
     {
-        width: 35%;
+        width: 37%;
         margin-left: 35%;
-        margin-bottom: 30px;
     }
     .payment .secure
     {
@@ -129,34 +124,37 @@
         width: 80%;
         margin-left: 11%;
     }
-    .form1 .fa-cc-visa { left: 45%; }
-    .form1 .fa-cc-mastercard { left: 53%; }
-    .form1 .fa-cc-amazon-pay
+    .form1 .fa-cc-visa , .form1 .fa-cc-mastercard
+    { 
+        left: 46%; 
+        bottom: 2%;
+    }
+    .form1 .fa-cc-mastercard { left: 56%; }
+    .form1 .fa-cc-paypal
     {
         left: 32%;
-        top: 87.2%; 
+        top: 102%; 
     }
     .form1 .fa-chevron-right , .form1 #bottomright
     {
         left: 85%;
-        top: 79.5%;
+        bottom: 3%;
     }
-    .form1 #bottomright { top: 88.5%; }
+    .form1 #bottomright { bottom: -6%; }
 }
 @media(min-width: 768px) and (max-width: 991px)
 {
-    .payment .lock i { margin-top: 23%; }
     .payment .step { margin-left: 44.3%; }
     .payment p
     {
-        width: 28%;
-        margin-left: 36%;
+        width: 26%;
+        margin-left: 38%;
         font-size: 17px;
     }
     .payment .num2
     {
         width: 22%;
-        margin-left: 39%;
+        margin-left: 40%;
         margin-bottom: 30px;
     }
     .payment .secure { margin-left: 69%; }
@@ -168,35 +166,34 @@
     .form1 .fa-cc-visa , .form1 .fa-cc-mastercard
     { 
         left: 42%;
-        top: 81%;
+        bottom: 15%;
     }
-    .form1 .fa-cc-mastercard { left: 47.5%; }
-    .form1 .fa-cc-amazon-pay
+    .form1 .fa-cc-mastercard { left: 48%; }
+    .form1 .fa-cc-paypal
     {
         left: 33%;
-        top: 90.3%; 
+        bottom: 6.5%; 
     }
     .form1 .fa-chevron-right , .form1 #bottomright
     {
         left: 79%;
-        top: 82.2%;
+        bottom: 16%;
     }
-    .form1 #bottomright { top: 91.2%; }
+    .form1 #bottomright { bottom: 7%; }
 }
 @media(min-width: 992px) and (max-width: 1199px)
 {
-    .payment .lock i { margin-top: 20%; }
-    .payment .step { margin-left: 44.5%; }
+    .payment .step { margin-left: 45.5%; }
     .payment p
     {
         width: 21%;
-        margin-left: 39%;
+        margin-left: 40%;
         font-size: 17px;
     }
     .payment .num2
     {
         width: 18%;
-        margin-left: 40.5%;
+        margin-left: 41.5%;
         margin-bottom: 30px;
     }
     .payment .secure { margin-left: 66%; }
@@ -208,18 +205,18 @@
     .form1 .fa-cc-visa , .form1 .fa-cc-mastercard
     { 
         left: 40%;
-        top: 87%;
+        bottom: 13.3%;
     }
-    .form1 .fa-cc-mastercard { left: 44.3%; }
-    .form1 .fa-cc-amazon-pay
+    .form1 .fa-cc-mastercard { left: 44.5%; }
+    .form1 .fa-cc-paypal
     {
         left: 33%;
-        top: 96.3%; 
+        bottom: 4.7%; 
     }
     .form1 .fa-chevron-right , .form1 #bottomright
     {
         left: 74%;
-        top: 88.5%;
+        bottom: 14%;
     }
-    .form1 #bottomright { top: 97.5%; }
+    .form1 #bottomright { bottom: 5.4%; }
 }
