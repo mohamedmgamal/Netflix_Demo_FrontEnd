@@ -1,0 +1,43 @@
+.container{
+    margin-right:90px;
+    margin-top: 90px;
+}
+.image{
+    text-align: center;
+}
+.content-container{
+    
+    margin-left: 550px;
+    width:300px;
+    
+}
+.Header-container{
+    text-align: center;
+}
+.contextBody{
+    margin-right: 0px;
+}
+ul{
+    margin-left:0px ;
+    padding: 20px;
+}
+li{
+    
+    list-style-type: none;
+}
+.check-group-text{
+    margin-left: 0;
+    
+}
+.check-group-icon{
+    color: red;
+}
+input.btn{
+    background-color: red;
+    width:100%;
+    font-weight: 700;
+}
+.list-group-item{
+    border: none;
+    
+}
