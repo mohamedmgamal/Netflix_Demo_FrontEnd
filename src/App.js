@@ -19,6 +19,8 @@ import Footer from "./components/footer/footer";
 import Step1Of3 from "./components/step1of3/step1of3"
 import Step2Of3 from "./components/step2of3/step2of3";
 import Plans from "./components/plans/plans";
+
+import Landing from './components/Landing/Landing';
 function App() {
   if (localStorage.token)
     return <h1>logged in</h1>
@@ -31,9 +33,9 @@ export default App
 export function NoAuth(){
       return (
       <Router>
-        <Redirect to={"/step1"}/>
+        <Redirect to={"/landing"}/>
         <Switch>
-          {/*<Route path="/landing-Page" component={LandingPage}/>*/}
+         <Route path="/landing" component={Landing}/>
           <Route path="/step1" component={signUpPath}/>
         </Switch>
       </Router>
@@ -48,8 +50,8 @@ export function signUpPath(props){
     <Route path={"/step1"}  component={Step1Of3}/>
     <Route path={"/step2"} component={Step2Of3}/>
     <Route path={"/Plans"} component={Plans}/>
-    <Route path={"/Payment-method"} component={Payment}/>
-    <Route path={"/paymentform"}  component={PaymentForm}/>
+    <Route path={"/Payment-method"}component={Payment}/>
+    <Route path={"/paymentform"} component={PaymentForm}/>
   </Switch>
   </Router>
   <Footer/></div>

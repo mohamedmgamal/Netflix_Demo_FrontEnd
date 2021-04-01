@@ -1,15 +1,12 @@
 .footer{
     background-color: grey;
-    height:350px;
 
 }
 a{
     float: left;
     color: black;
 }
-.footer-container{
-    margin-top: 15px;
-}
+
 .line{
     margin-top:10px;
     margin-left: 35px;

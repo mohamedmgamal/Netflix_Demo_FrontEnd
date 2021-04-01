@@ -2,13 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/netflix_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/netflix_movies_cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/netflixlogo.0.0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Landing/Landing.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Landing/Landing.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Landing/images/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Landing/images/fourth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Landing/images/log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Landing/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Landing/images/second.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Landing/images/third.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Payment/payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/payment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/step2of3/step2of3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/step2of3/step2of3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/choose category/choose.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/choose category/choose.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/choose category/choose.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/choose category/choose.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/phone_varification/phone.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/phone_varification/phone.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +53,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Landing/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ITI\Netflix\netflix_demo_frontend\src\components\Landing\images" />
+      <recent name="E:\ITI\Netflix\netflix_demo_frontend\src\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ITI\Netflix\netflix_demo_frontend\src\components\Landing\images" />
+      <recent name="E:\ITI\Netflix\netflix_demo_frontend\src\components\Landing" />
+      <recent name="E:\ITI\Netflix\netflix_demo_frontend\src\images" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -89,7 +118,8 @@
       <workItem from="1617211620535" duration="644000" />
       <workItem from="1617220083147" duration="606000" />
       <workItem from="1617232947009" duration="1681000" />
-      <workItem from="1617284007343" duration="8416000" />
+      <workItem from="1617284007343" duration="9553000" />
+      <workItem from="1617315104300" duration="1655000" />
     </task>
     <servers />
   </component>
