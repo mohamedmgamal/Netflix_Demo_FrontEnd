@@ -31,8 +31,10 @@ export default App
 export function NoAuth(){
       return (
       <Router>
+        <Redirect to={"/step1"}/>
         <Switch>
-          <Route path="/finish-SignUp" component={signUpPath}/>
+          {/*<Route path="/landing-Page" component={LandingPage}/>*/}
+          <Route path="/step1" component={signUpPath}/>
         </Switch>
       </Router>
   );
@@ -41,15 +43,13 @@ export function signUpPath(props){
   return(
      <div>
        <Header/>
-
   <Router>
   <Switch>
-    <Route path={"/"} component={Payment}/>
-    <Route path={"/finish-SignUp"} component={Step1Of3}/>
+    <Route path={"/step1"}  component={Step1Of3}/>
     <Route path={"/step2"} component={Step2Of3}/>
     <Route path={"/Plans"} component={Plans}/>
     <Route path={"/Payment-method"}component={Payment}/>
-    <Route path={"/paymentform"} component={PaymentForm}/>
+    <Route path={"/paymentform"} exact component={PaymentForm}/>
   </Switch>
   </Router>
   <Footer/></div>

@@ -31,7 +31,7 @@ class PaymentForm extends Component {
                         and that you are over 18. Netflix will automatically continue your membership
                         and charge the monthly membership free (currently EGP200) to your payment method until you cancel.
                         </p>
-                        <div className="premium" style={{backgroundColor:"#DF3B45",paddingTop:"2.5%",paddingLeft:"1%",textAlign:"center"}}>
+                        <div className="premium mg" style={{backgroundColor:"#DF3B45",paddingTop:"2.5%",paddingLeft:"1%",textAlign:"center",cursor:"pointer"}}>
                             <span style={{color:"white",fontWeight:"bold"}}>Continue</span>
                         </div>
                     </div>
