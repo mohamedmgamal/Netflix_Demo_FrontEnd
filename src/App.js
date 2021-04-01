@@ -48,8 +48,8 @@ export function signUpPath(props){
     <Route path={"/step1"}  component={Step1Of3}/>
     <Route path={"/step2"} component={Step2Of3}/>
     <Route path={"/Plans"} component={Plans}/>
-    <Route path={"/Payment-method"}component={Payment}/>
-    <Route path={"/paymentform"} exact component={PaymentForm}/>
+    <Route path={"/Payment-method"} component={Payment}/>
+    <Route path={"/paymentform"}  component={PaymentForm}/>
   </Switch>
   </Router>
   <Footer/></div>

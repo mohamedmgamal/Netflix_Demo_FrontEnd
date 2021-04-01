@@ -4,8 +4,11 @@
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Payment/paymentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/paymentForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Payment/payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/payment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/step2of3/step2of3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/step2of3/step2of3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +89,7 @@
       <workItem from="1617211620535" duration="644000" />
       <workItem from="1617220083147" duration="606000" />
       <workItem from="1617232947009" duration="1681000" />
-      <workItem from="1617284007343" duration="1403000" />
+      <workItem from="1617284007343" duration="8416000" />
     </task>
     <servers />
   </component>

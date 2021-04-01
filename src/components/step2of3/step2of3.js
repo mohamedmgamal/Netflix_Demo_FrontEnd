@@ -9,7 +9,7 @@ import logo from './Capture.JPG'
 class Step2Of3 extends React.Component{
     next=()=>{
         this.props.history.push( {pathname: '/Plans',
-            user :this.props.user})
+            user :this.props.location.user})
     }
    render(){
         return(
