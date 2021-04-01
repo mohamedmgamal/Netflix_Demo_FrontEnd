@@ -41,7 +41,7 @@ export function signUpPath(props){
   return(
      <div>
        <Header/>
-
+      
   <Router>
   <Switch>
     <Route path={"/"} component={Payment}/>

@@ -1,7 +1,12 @@
 .footer{
+    margin-top: 700px;
     background-color: grey;
-    height:400px;
+    height:350px;
     
+}
+a{
+    float: left;
+    color: black;
 }
 .footer-container{
     margin-top: 15px;

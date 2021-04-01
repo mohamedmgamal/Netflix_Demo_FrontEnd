@@ -1,15 +1,12 @@
-.container{
-    margin-right:90px;
-    margin-top: 90px;
-}
+
 .image{
     text-align: center;
 }
 .content-container{
     
-    margin-left: 550px;
-    width:300px;
-    
+    width:250px;
+    margin-left: 50px;
+    padding:0;
 }
 .Header-container{
     text-align: center;
