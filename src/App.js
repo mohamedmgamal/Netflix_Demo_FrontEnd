@@ -19,7 +19,7 @@ import Footer from "./components/footer/footer";
 import Step1Of3 from "./components/step1of3/step1of3"
 import Step2Of3 from "./components/step2of3/step2of3";
 import Plans from "./components/plans/plans";
-
+import Login from "./components/Login/Login";
 import Landing from './components/Landing/Landing';
 function App() {
   if (localStorage.token)
@@ -35,8 +35,9 @@ export function NoAuth(){
       <Router>
         <Redirect to={"/landing"}/>
         <Switch>
-         <Route path="/landing" component={Landing}/>
-          <Route path="/step1" component={signUpPath}/>
+          <Route path={"/login"} component={Login}/>
+         <Route path={"/landing"} component={Landing}/>
+          <Route path={"/step1"} component={signUpPath}/>
         </Switch>
       </Router>
   );

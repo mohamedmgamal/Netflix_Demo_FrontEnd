@@ -1,14 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import img from "./netflix_movies_cover.jpg"
+import './Login.css';
 class Login extends Component {
     state = {  }
     render() { 
-        return ( 
-            <React.Fragment>
-                <div className="col">
-                        <img id="netflixlogo" src="./img/logo.png" alt="netflixlogo"/>
+        return (
+                <div className="background">
+                        <img id="netflixlogo" src="./logo.png" alt="netflix logo" className="img-fluid"/>
                         <form action="" method="POST"  onsubmit="return validation()">
                             <h1> Sign In </h1>
-                            <div id="errmsg" style="display: none;">
+                            <div id="errmsg" style={{display:" none"}}>
                                 
                                 Sorry, we cannot find an account for this email address. Please retry <a href=""> or create new account</a>
                             </div>   
@@ -38,7 +40,6 @@ class Login extends Component {
                             </div>
                         </form>
                     </div>
-            </React.Fragment>
          );
     }
 }

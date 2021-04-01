@@ -5,6 +5,7 @@ import logo from './images/logo.png';
 import second from './images/second.png';
 import third from './images/third.png';
 import fourth from './images/fourth.png';
+import {Link} from "react-router-dom";
 
 
 
@@ -15,7 +16,7 @@ class Landing extends Component {
             <React.Fragment>
                 <section className="first" style={{backgroundImage:''}}>
                 <img id="netflixlogo" src={logo} alt="netflixlogo"/>
-                <a href=""><button id="loginbutton" type="button" className="btn btn-danger">Sign in</button></a>
+                <Link to={"/login"} ><button id="loginbutton" type="button" className="btn btn-danger">Sign in</button></Link>
                 <div className="first11 text-center">
                     <p> Unlimited movies, TV <br/> shows, and more. </p>
                     <h2>Watch anywhere. Cancel anytime.</h2>
