@@ -44,6 +44,7 @@ export function signUpPath(props){
 
   <Router>
   <Switch>
+    <Route path={"/"} component={Payment}/>
     <Route path={"/finish-SignUp"} component={Step1Of3}/>
     <Route path={"/step2"} component={Step2Of3}/>
     <Route path={"/Plans"} component={Plans}/>
