@@ -1,8 +1,6 @@
 import React,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './footer.css';
-import {Icon} from 'react-icons-kit';
-import { iosWorld } from 'react-icons-kit/ionicons/iosWorld';
 class Footer extends React.Component{
     
     render(){
