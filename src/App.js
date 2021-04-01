@@ -19,6 +19,8 @@ import Footer from "./components/footer/footer";
 import Step1Of3 from "./components/step1of3/step1of3"
 import Step2Of3 from "./components/step2of3/step2of3";
 import Plans from "./components/plans/plans";
+
+import Landing from './components/Landing/Landing';
 function App() {
   if (localStorage.token)
     return <h1>logged in</h1>
@@ -50,6 +52,8 @@ export function signUpPath(props){
     <Route path={"/Plans"} component={Plans}/>
     <Route path={"/Payment-method"}component={Payment}/>
     <Route path={"/paymentform"} component={PaymentForm}/>
+    <Route path={"/landing"} component={Landing}/>
+
   </Switch>
   </Router>
   <Footer/></div>
