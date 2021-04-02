@@ -3,7 +3,12 @@ import './payment.css';
 import { Link } from 'react-router-dom';
 
 class Payment extends Component {
-    state = {  }
+
+    next=()=>{
+        this.props.history.push( {pathname: '/paymentform',
+            user :this.props.location.user,
+            plan:this.props.location.plan})
+    }
     render() { 
         return ( 
             <React.Fragment>
@@ -19,14 +24,14 @@ class Payment extends Component {
                         Secure Server <i class="fa fa-lock"></i>
                     </span>
                     <div className="form1">
-                        
-                        <input type="text" placeholder="Credit or Debit Card" className="form-control" disabled />
-                        <Link to="/paymentform"> <i className="fa fa-cc-visa fa-2x"></i></Link>
-                        <Link to="/paymentform"> <i className="fa fa-cc-mastercard fa-2x"></i></Link>
-                        <Link  to="/paymentform" className="fa fa-chevron-right fa-lg"></Link>
+                        <div onClick={this.next}>
+                        <input  placeholder="Credit or Debit Card" className="form-control" disabled  style={{ cursor: "pointer"}}/>
+                     <i className="fa fa-cc-visa fa-2x"></i>
+                        <i className="fa fa-cc-mastercard fa-2x"></i>
+                        <a className="fa fa-chevron-right fa-lg"></a></div>
                         <input type="text" placeholder="Pay Cash" className="form-control" disabled /> 
                         <i class="fa fa-cc-paypal fa-2x"></i>
-                        <Link  to="/paymentform" id="bottomright" className="fa fa-chevron-right fa-lg"></Link>
+                        <Link   className="fa fa-chevron-right fa-lg"></Link>
                     </div>
                 </div>
             </React.Fragment>

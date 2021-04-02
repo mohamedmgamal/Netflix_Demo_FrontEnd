@@ -1,4 +1,108 @@
-.body{
+.first{
+    margin-top: 50px;
+}
+
+.text-left{
+    width: 100%;
+}
+.empty{
+    background-color: red;
+}
+.choosen{
+    background-color: red;
+}
+.square{
+    cursor: pointer;
+    width: 120px;
+    background-color: #e50913;
+    display: inline;
+    float: right;
+    height: 100px;
+    text-align: center;
+    padding-top: 33%;
+    margin-right:20% ;
+}
+table{
+    border-top: seashell;
+}
+svg{
+    color: red;
+}
+.text{
+    width: 100%;
+}
+.hide{
+    text-align: center;
+}
+.step1{
+    text-align: center;
+}
+.btn {
+    width: 300px;
+    background-color: red;
+}
+@media screen and (max-width: 565px) and (min-width: 300px) {
+    .mrmr{
+        display:none;
+    }
+
+    .mrmr2{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 300px) {
+    .mrmr{
+        display:none;
+    }
+    .mrmr2{
+        display: none;
+
+    }
+
+}
+
+
+
+/* .squares{background-color: red;}
+.table {
+	width: 100%;
+	margin-top: 2rem;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.table thead th {
+	text-transform: uppercase;
+	padding: 0.8rem;
+}
+
+.table tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.table tbody tr td {
+	color: #999;
+	padding: 0.8rem 1.2rem;
+	text-align: center;
+}
+
+.table tbody tr td:first-child {
+	text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+	background: #222;
+}
+.header{
+    height:100px;
+    background-color: red;
+}
+/* .body{
     margin: 0;
     padding: 0;
     font-family: Cairo-light;
@@ -36,16 +140,16 @@
     font-size: 20px;
     position: absolute;
     left: 5%;
-    top: 5%;
-    /* width: 135px; */
-    height: 50px;
+    top: 5%; */
+/* width: 135px; */
+/* height: 50px;
 }
 .exp{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    height: 180px;
-}
+position: -webkit-sticky; /* Safari */
+/* position: sticky;
+top: 0;
+height: 180px;
+} */
 /* .exp3{
     background-color: greenyellow;
     width: 90%;
@@ -61,7 +165,7 @@
     margin-right: auto;
     margin-left: auto;
 } */
-.firstrw{
+/* .firstrw{
     margin-top: 30px;
 }
 .firstrw h4{
@@ -70,6 +174,7 @@
 #firstsquare{
     cursor: pointer;
     color: white;
+    border-radius: 10px;
     padding-top: 45px;
     background-color: rgb(190, 87, 87);
     height: 120px;
@@ -78,6 +183,7 @@
     cursor: pointer;
     margin-right: -2px;
     color: white;
+    border-radius: 10px;
     padding-top: 45px;
     background-color: rgb(190, 87, 87);
     height: 120px;
@@ -86,6 +192,7 @@
     cursor: pointer;
     margin-right: -2px;
     color: white;
+    border-radius: 10px;
     padding-top: 45px;
     background-color: red;
     height: 120px;
@@ -127,6 +234,7 @@
     margin-right: auto;
     text-align: center;
 }
+
 #subbut{
     margin-left: auto;
     margin-right: auto;
@@ -141,8 +249,9 @@
     width: 350px;
     background-color: red;
 }
+
 footer{
-    
+
     opacity: 0.3;
     width: 100%;
     margin: 70px 0px 0px 0px;
@@ -164,4 +273,4 @@ footer .row{
 }
 footer h5{
     padding-top: 39px;
-}
+} */
