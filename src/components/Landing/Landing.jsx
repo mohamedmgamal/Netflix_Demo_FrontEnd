@@ -168,7 +168,7 @@ class Landing extends Component {
             </div> 
             
     </section>
-    <section className="sixth">
+    {/* <section className="sixth">
         <footer>
             <div className="container">
                 <h5><a href="">Questions? Contact us.</a></h5>
@@ -208,7 +208,7 @@ class Landing extends Component {
                 </div>
             </div>
         </footer>
-    </section>
+    </section> */}
     
             </React.Fragment>
          );
