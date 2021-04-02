@@ -19,6 +19,7 @@ import Footer from "./components/footer/footer";
 import Step1Of3 from "./components/step1of3/step1of3"
 import Step2Of3 from "./components/step2of3/step2of3";
 import Plans from "./components/plans/plans";
+import Home from './components/Home/home';
 import Login from "./components/Login/Login";
 import Landing from './components/Landing/Landing';
 function App() {
