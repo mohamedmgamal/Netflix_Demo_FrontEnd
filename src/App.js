@@ -22,6 +22,7 @@ import Plans from "./components/plans/plans";
 import Home from './components/Home/home';
 import Login from "./components/Login/Login";
 import Landing from './components/Landing/Landing';
+
 function App() {
   if (localStorage.token)
     return <h1>logged in</h1>
@@ -34,7 +35,7 @@ export default App
 export function NoAuth(){
       return (
       <Router>
-        <Redirect to={"/landing"}/>
+        {/* <Redirect to={"/landing"}/> */}
         <Switch>
           <Route path={"/login"} component={Login}/>
          <Route path={"/landing"} component={Landing}/>
@@ -47,6 +48,7 @@ export function signUpPath(props){
   return(
      <div>
        <Header/>
+       <Home/>
   <Router>
   <Switch>
     <Route path={"/step1"}  component={Step1Of3}/>

@@ -1,11 +1,19 @@
 import React from 'react';
 import './home.css';
 import Row from '../Raw/Raw';
+import Banner from '../Banner/Banner'
+
 import requests from './requests';
 
 function Home(){
     return(
+        <React.Fragment>
+            <div className="row">
+            <Banner />
+            </div>
+           
         <div className="Home">
+            
             <Row title="NETFLIX ORIRGINALS" fetchUrl={requests.fetchNetflixOriginals}
             isLargeRow />
             <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
@@ -17,6 +25,7 @@ function Home(){
             <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
 
         </div>
+        </React.Fragment>
     )
 }
 export default Home;
