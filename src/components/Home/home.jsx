@@ -4,11 +4,14 @@ import Row from '../Raw/Raw';
 import Banner from '../Banner/Banner'
 
 import requests from './requests';
+import Navbar from "../Navbar/navbar";
+
 
 function Home(){
     return(
-        <React.Fragment>
-            <div className="row">
+       <div>
+            <Navbar/>
+            <div style={{margin:"0px",marginTop:"5%"}}>
             <Banner />
             </div>
            
@@ -25,7 +28,7 @@ function Home(){
             <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
 
         </div>
-        </React.Fragment>
+       </div>
     )
 }
 export default Home;

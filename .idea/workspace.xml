@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Login/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/netflix_movies_cover.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Landing/Landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Landing/Landing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Raw/Raw.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Raw/Raw.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +104,9 @@
       <workItem from="1617220083147" duration="606000" />
       <workItem from="1617232947009" duration="1681000" />
       <workItem from="1617284007343" duration="9553000" />
-      <workItem from="1617315104300" duration="5204000" />
+      <workItem from="1617315104300" duration="5476000" />
+      <workItem from="1617320841640" duration="68000" />
+      <workItem from="1617404197794" duration="2368000" />
     </task>
     <servers />
   </component>

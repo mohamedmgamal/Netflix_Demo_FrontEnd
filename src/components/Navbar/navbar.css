@@ -1,5 +1,4 @@
 * { font-family: Arial, Helvetica, sans-serif; }
-body { height: 3000px;}
 .nav 
 {
 	position: fixed;
@@ -10,7 +9,9 @@ body { height: 3000px;}
 	z-index: 2;
 	transition-timing-function: ease-in;
 	transition: all 0.5s;
+    background-color: black;
 }
+.nav
 ul { list-style: none; }
 .navlogo, .navuser 
 {
@@ -59,18 +60,18 @@ ul { list-style: none; }
 .navblack 
 {
 	background-color: #111;
-	opacity: 0 8;
+	opacity: 08;
 }
-.search input[type=text] 
+.search input[type=text]
 {
     position: fixed;
-    left: 65%;
-    top: 15px;
+    left: 55%;
+    top: -2%;
     padding: 6px;
     font-size: 15px;
     border: 1px hidden;
     border-radius: 20px;
-    width: 15%;
+    width: 25%;
 }
 .search i
 {
@@ -78,7 +79,7 @@ ul { list-style: none; }
     left: 77.5%;
     top: 22px;
     color: red;
-    font-size: 20px; 
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
 }

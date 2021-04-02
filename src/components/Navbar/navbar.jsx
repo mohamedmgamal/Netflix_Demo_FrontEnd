@@ -15,19 +15,19 @@ const Navbar = () => {
 					/>
 				</li>
 				<li className="home">
-                    <Link aria-current="page" to="/home">Home</Link>
+                    <a aria-current="page" to="/home">Home</a>
                 </li>
                 <li className="show">
-                    <Link to="/show">TV Shows</Link>
+                    <a to="/show">TV Shows</a>
                 </li>   
                 <li className="movies">
-                    <Link to="/movies">Movies</Link>
+                    <a to="/movies">Movies</a>
                 </li> 
 				<li className="new">
-                    <Link to="/new">New & Popular</Link>
+                    <a to="/new">New & Popular</a>
                 </li>
 				<li className="list">
-                    <Link to="/list">My List</Link>
+                    <a to="/list">My List</a>
                 </li>
 				<li className="search">
 					<input type="text" placeholder="Search.." name="search" />
