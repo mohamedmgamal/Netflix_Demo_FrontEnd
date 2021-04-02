@@ -9,12 +9,12 @@ class Header extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <nav class="navbar navbar-lg navbar-light">
-                    <div class="Netflix col-xs-6">
+                <nav className="navbar navbar-lg navbar-light">
+                    <div className="Netflix col-xs-6">
                         <a  className={"Header"} href="#"><img src={Logo} /></a>
                         
                     </div>
-                    <div class="Netflix2 col-xs-6">
+                    <div className="Netflix2 col-xs-6">
                     <a className={"Header"} class="navbar-brand" href="#">SignIn</a>
                     </div>
                 </nav>

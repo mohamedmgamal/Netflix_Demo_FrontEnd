@@ -19,6 +19,7 @@ import Footer from "./components/footer/footer";
 import Step1Of3 from "./components/step1of3/step1of3"
 import Step2Of3 from "./components/step2of3/step2of3";
 import Plans from "./components/plans/plans";
+import Home from './components/Home/home';
 function App() {
   if (localStorage.token)
     return <h1>logged in</h1>
@@ -41,7 +42,7 @@ export function signUpPath(props){
   return(
      <div>
        <Header/>
-
+      <Home/>
   <Router>
   <Switch>
     <Route path={"/"} component={Payment}/>
