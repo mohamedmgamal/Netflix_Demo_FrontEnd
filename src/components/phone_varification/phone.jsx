@@ -8,12 +8,12 @@ class Phone extends Component{
             form: true,
             alert: false,
             verify:"",
-            user:this.props.location.user,
          phoneNumber:""
     }
     next=()=>{
+        this.props.location.user.phoneNumber=this.state.phoneNumber
         this.props.history.push( {pathname: '/Categories',
-            user :this.state.user,
+            user :this.props.location.user,
             plan:this.props.location.plan})
     }
     onChangeHandler = (event) => {
@@ -71,11 +71,11 @@ class Phone extends Component{
     render() {
         return (
            
-             <div className="container col-12 col-sm-6 main center-container">
+             <div className=" col-12 col-sm-6 main center-container">
                  <div className="row">
                      <div className="text-left">
                      
-                          <h1 style={{fontWeight:"bold"}} >Welcome to Netflix!</h1>
+                          <h1 style={{fontWeight:"bold",textAlign:"center"}} >Welcome to Netflix!</h1>
                             <p>You've started your membership and we emaild the details to you</p>
                             
                         <div className="sec">

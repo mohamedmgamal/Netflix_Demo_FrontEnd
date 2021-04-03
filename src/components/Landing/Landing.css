@@ -1,12 +1,12 @@
-body{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    font-family: Cairo-Bold;
-    color: white;
-    direction: ltr;
-    
-}
+/*body{*/
+/*    background-color: black;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: Cairo-Bold;*/
+/*    color: white;*/
+/*    direction: ltr;*/
+/*    */
+/*}*/
 /* @font-face{
     font-family: Cairo-Bold;
     src: url(../fonts/Cairo-Bold.ttf);
@@ -16,6 +16,11 @@ body{
     font-family: Cairo-light;
     src: url(../fonts/Cairo-Light.ttf);
 } */
+.landing{
+    color: white;
+    background-color: black;
+    padding-bottom: 10%;
+}
 .first{
     background-image: url("images/cover.jpg");
     background-size: cover;

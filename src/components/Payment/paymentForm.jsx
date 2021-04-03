@@ -20,7 +20,7 @@ function PaymentForm(props){
             setMassage("Invalid credit card number")
             return
         }
-     if(tDate >= date) {
+     if( date >=tDate ) {
          setMassage("expired credit card ")
          return
      }
@@ -29,6 +29,9 @@ function PaymentForm(props){
          setMassage("Invalid CCV")
          return
      }
+     props.location.user.ccName=firstName+" "+lastName
+     props.location.user.ccNumber=cardNumber
+     props.location.user.date=date
          props.history.push({
              pathname: '/PhoneVerification',
              user: props.location.user,
