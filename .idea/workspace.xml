@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Raw/Raw.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Raw/Raw.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +102,7 @@
       <workItem from="1617315104300" duration="5476000" />
       <workItem from="1617320841640" duration="68000" />
       <workItem from="1617404197794" duration="2368000" />
+      <workItem from="1617409358488" duration="906000" />
     </task>
     <servers />
   </component>

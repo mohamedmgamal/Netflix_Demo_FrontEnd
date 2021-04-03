@@ -5,7 +5,7 @@ import './Banner.css';
 import bg from './bg.mp4'
 
 
-function Banner() {
+function    Banner() {
     const [movie, setMovie] = useState([]);
 
     useEffect(()=>{
