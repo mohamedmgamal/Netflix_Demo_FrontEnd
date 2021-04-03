@@ -20,7 +20,7 @@ function Home(){
             <Row title="NETFLIX ORIRGINALS" fetchUrl={requests.fetchNetflixOriginals}
             isLargeRow />
             <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-            <Row title="fetchTopRated" fetchUrl={requests.fetchTopRated} />
+            <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
             <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
             <Row title="Romantic" fetchUrl={requests.fetchRomanceMovies} />
             <Row title="Horror" fetchUrl={requests.fetchHorrorMovies} />
