@@ -5,7 +5,7 @@ import './Banner.css';
 import bg from './bg.mp4'
 
 
-function    Banner() {
+function Banner() {
     const [movie, setMovie] = useState([]);
 
     useEffect(()=>{
@@ -21,39 +21,63 @@ function    Banner() {
     }
     return (
         <React.Fragment>
+        <section id='jumtron' className='pb-5'>
+            <div className='jumbotron jumbotron-fluid'>
+                <video autoPlay  muted loop poster='https://www.themoviedb.org/t/p/w533_and_h300_bestv2/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg' >
+                    <source src={bg} type='video/mp4'></source>
+                </video>
+                <div className='container co text-light'>
+                <h1 className="display-4">
+                    {movie?.title || movie?.name || movie?.original_name}
+                </h1>
+                 <div className="banner_buttons row">
+                    <button className="banner_button ">
+                    <i class="fa fa-play"></i>  Play
+                    </button>
+                    <button className="banner_button ">
+                    <i class="fa fa-info-circle"></i> more info
+                    </button>
+                </div>
+                 <div className="banner_description col-6">
+                    {trancate(movie?.overview,200)}
+                </div>
+                </div>
+
+
+            </div>
+        </section>
         
         {/* // <header className='banner' style={{ */}
         {/* //     backgroundSize:'cover',
         //     backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         //     backgroundPosition:"center center",
         // }}> */}
-            <div className="video-background ">
+            {/* <div className="video-background row">
                         <video id='bgvid' autoPlay  muted className='col-12' poster='https://www.themoviedb.org/t/p/w533_and_h300_bestv2/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg'>
                             <source src={bg} type='video/mp4'></source>
                         </video>  
             
             <div className="banner_contents col-6" >
-                <h1 className="banner_title col-1" style={{fontsize:"10vw"}}>
+                <h1 className="banner_title col-12">
                     {movie?.title || movie?.name || movie?.original_name}
                 </h1>
                 <div className="banner_buttons row">
-                    <button className="banner_button btn btn-lg col-5">
-                    <i class="fa fa-play" ></i>  Play
+                    <button className="banner_button col-5">
+                    <i class="fa fa-play"></i>  Play
                     </button>
-                    <button className="banner_button btn btn-lg col-5">
+                    <button className="banner_button col-5">
                     <i class="fa fa-info-circle"></i> more info
                     </button>
                 </div>
-                <div className="col-12">
+                <div className="row">
                 <div className="banner_description col-6">
-                    {/*{trancate(movie?.overview,200)}*/}
-                    <p style={{fontsize:"1vw"}}>{movie.overview}</p>
+                    {trancate(movie?.overview,200)}
                 </div>
                 </div>
                 
 
             </div>
-            </div>
+            </div> */}
             </React.Fragment>
 
             
