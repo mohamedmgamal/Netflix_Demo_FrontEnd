@@ -1,121 +1,48 @@
 * { font-family: Arial, Helvetica, sans-serif; }
-.nav 
-{
-	position: fixed;
+
+.navbar 
+{ 
+    height: 80px;
+    background-color: black; 
+    position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 5px;
-	height: 65px;
-	z-index: 2;
-	transition-timing-function: ease-in;
-	transition: all 0.5s;
-    background-color: black;
+	z-index: 9999;
 }
-.nav
-ul { list-style: none; }
-.navlogo, .navuser 
-{
-    position: fixed;
-	height: 30px;
-    top: 17px;
+
+.navbar-brand { width: 9%; }
+.navbar-nav .nav-link { color: white; }
+
+#home { margin-left: 30px; }
+
+.d-flex { 
+    margin-left: 36%;
+    margin-bottom: 15px; 
 }
-.navlist .home a , .navlist .show a , .navlist .movies a ,
-.navlist .new a , .navlist .list a , .navlist .kids 
-{
-    color: white;
-    position: fixed;
-    left: 15%;
-    text-decoration: none;
-    font-size: 15px;
+.d-flex input {
+    height: 37px;
+    position: relative;
 }
-.navlist 
-{
-	display: flex;
-	justify-content: space-between;
-	position: fixed;
-	z-index: 2;
-	width: 100%;
-	padding: 1rem 3rem;
-}
-.navlist .show a
-{
-    position: fixed;
-    left: 19%;
-}
-.navlist .movies a
-{
-    position: fixed;
-    left: 25%
-}
-.navlist .new a
-{
-    position: fixed;
-    left: 29.5%
-}
-.navlist .list a
-{
-    position: fixed;
-    left: 37.5%
-}
-.navblack 
-{
-	background-color: #111;
-	opacity: 08;
-}
-.search input[type=text]
-{
-    position: fixed;
-    left: 55%;
-    top: -2%;
-    padding: 6px;
-    font-size: 15px;
-    border: 1px hidden;
-    border-radius: 20px;
-    width: 25%;
-}
-.search i
-{
-    position: fixed;
-    left: 77.5%;
-    top: 22px;
+.d-flex i {
     color: red;
-    font-size: 20px;
+    position: absolute;
+    right: 19%;
+    top: 38%;
+    cursor: pointer;
     font-weight: bold;
-    cursor: pointer;
 }
-.navlist .kids
-{
-    left: 83%;
-    top: 22px;
-    cursor: pointer;
-}
-.navlist .fa-gift
-{
-    position: fixed;
-    right: 170px;
-    top: 18.7px;
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-}
-.navlist .fa-bell
-{
-    position: fixed;
-    right: 120px;
-    top: 25px;
+.navuser , .fa-caret-down {
     color: white;
     cursor: pointer;
 }
-.navuser
-{
-    margin-left: -50px; 
-    cursor: pointer;
-}
-.navlist .fa-caret-down
-{
-    color: white;
-    position: fixed;
-    right: 47px;
-    top: 25px;
+.navuser .fa-gift { font-size: 28px; }
+
+.navuser span , .navuser .fa-gift { margin-right: 20px; }
+
+.navuser .fa-bell { margin-right: 30px; }
+.user {
+    width: 2.5%;
+    border-radius: 5px;
+    margin-right: 10px;
     cursor: pointer;
 }
