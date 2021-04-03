@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import './choose.css';
+import {Link} from "react-router-dom";
 
 
 class Choose extends Component {
@@ -41,7 +42,7 @@ class Choose extends Component {
                 <div className="container">
                     <h5 className="display-4"><span className="badge badge-danger"> {this.state.count}</span> Ahmed Alaa, choose 3 you like.</h5>
                     <p className="lead">it will help us find TV shows and movies you will love !</p>
-                    <button className="btn btn-danger butt" href="#" >continue</button>
+                    <Link to={"/Home"} className="btn btn-danger butt center-container" href="#">continue</Link>
                 </div>
                 </div>
                 <div className="container">
@@ -72,7 +73,7 @@ class Image extends Component {
             <button className="bt"  onClick={ () => {this.props.add()
             this.setState({active: !this.state.active})
             }} >
-                <img src={this.props.src}  width="100%" height="300px" alt=""/>
+                <img src={this.props.src}  className="img-fluid" style={{width:"100%"}} alt=""/>
                 <div className={this.state.active && 'over'}>
                             <i className= {this.state.active && "fa fa-thumbs-up  ic"}/>
                 </div>

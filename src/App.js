@@ -19,14 +19,14 @@ import Footer from "./components/footer/footer";
 import Step1Of3 from "./components/step1of3/step1of3"
 import Step2Of3 from "./components/step2of3/step2of3";
 import Plans from "./components/plans/plans";
-import Home from './components/Home/home';
-import Login from "./components/Login/Login";
-import Landing from './components/Landing/Landing';
+//import Home from './components/Home/home';
+// import Login from "./components/Login/Login";
+// import Landing from './components/Landing/Landing';
 
 function App() {
-  if (!localStorage.token)
-    return <Home/>
-  else
+  // if (!localStorage.token)
+  //   return <Home/>
+  // else
     return <NoAuth/>
 
 
@@ -37,9 +37,9 @@ export function NoAuth(){
       <Router>
         {/* <Redirect to={"/landing"}/> */}
         <Switch>
-          <Route path={"/login"} component={Login}/>
-         <Route path={"/landing"} component={Landing}/>
-          <Route path={"/step1"} component={signUpPath}/>
+         {/* <Route path={"/login"} component={Login}/>*/}
+         {/*<Route path={"/landing"} component={Landing}/>*/}
+          <Route path={"/signUp"} component={signUpPath}/>
         </Switch>
       </Router>
   );
@@ -48,14 +48,16 @@ export function signUpPath(props){
   return(
      <div>
        <Header/>
-       <Home/>
   <Router>
+    <Redirect to={"/step1"}/>
   <Switch>
     <Route path={"/step1"}  component={Step1Of3}/>
     <Route path={"/step2"} component={Step2Of3}/>
     <Route path={"/Plans"} component={Plans}/>
     <Route path={"/Payment-method"}component={Payment}/>
     <Route path={"/paymentform"} component={PaymentForm}/>
+    <Route path={"/PhoneVerification"} component={Phone}/>
+    <Route path={"/Categories"}component={Choose}/>
   </Switch>
   </Router>
   <Footer/></div>

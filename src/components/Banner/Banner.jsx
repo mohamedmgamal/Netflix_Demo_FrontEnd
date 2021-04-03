@@ -33,7 +33,7 @@ function    Banner() {
                         </video>  
             
             <div className="banner_contents col-6" >
-                <h1 className="banner_title col-1" style={{fontsize:"10vw"}}>
+                <h1 className="banner_title col-1" style={{fontsize:"10vw",color:"white"}}>
                     {movie?.title || movie?.name || movie?.original_name}
                 </h1>
                 <div className="banner_buttons row">
@@ -47,7 +47,7 @@ function    Banner() {
                 <div className="col-12">
                 <div className="banner_description col-6">
                     {/*{trancate(movie?.overview,200)}*/}
-                    <p style={{fontsize:"1vw"}}>{movie.overview}</p>
+                    <p style={{fontsize:"1vw",color:"white"}}>{movie.overview}</p>
                 </div>
                 </div>
                 
