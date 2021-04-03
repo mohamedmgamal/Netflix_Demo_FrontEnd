@@ -33,14 +33,14 @@ function    Banner() {
                         </video>  
             
             <div className="banner_contents col-6" >
-                <h1 className="banner_title col-1" style={{fontsize:"10vw"}}>
+                <h1 className="banner_title " style={{fontsize:"10vw"}}>
                     {movie?.title || movie?.name || movie?.original_name}
                 </h1>
                 <div className="banner_buttons row">
-                    <button className="banner_button btn btn-lg col-5">
+                    <button className="banner_button btn  col-3">
                     <i class="fa fa-play" ></i>  Play
                     </button>
-                    <button className="banner_button btn btn-lg col-5">
+                    <button className="banner_button btn  col-3">
                     <i class="fa fa-info-circle"></i> more info
                     </button>
                 </div>
