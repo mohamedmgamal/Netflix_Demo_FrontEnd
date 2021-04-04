@@ -45,7 +45,7 @@ class Choose extends Component {
                 </div>
                 </div>
                 <div className="container">
-                <div className="row">
+                <div className="row roo">
                     {this.state.sours.map((src,index)=>{
                         return <Image key={index} src={src} add={this.add}/>
                     })}
