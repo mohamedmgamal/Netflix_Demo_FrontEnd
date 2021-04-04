@@ -4,9 +4,12 @@
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/choose category/choose.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/choose category/choose.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/choose category/choose.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/choose category/choose.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/step1of3/step1of3.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/step1of3/step1of3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/step1of3/step1of3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/step1of3/step1of3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/step2of3/step2of3.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/step2of3/step2of3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/step2of3/step2of3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/step2of3/step2of3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +110,7 @@
       <workItem from="1617409358488" duration="906000" />
       <workItem from="1617549701370" duration="1837000" />
       <workItem from="1617553721331" duration="628000" />
+      <workItem from="1617554414911" duration="424000" />
     </task>
     <servers />
   </component>

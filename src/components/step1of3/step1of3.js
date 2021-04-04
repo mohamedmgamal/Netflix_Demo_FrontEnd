@@ -27,7 +27,7 @@ class Step1Of3 extends React.Component{
     render(){
         return(
             <React.Fragment>
-            <div className="row ">
+            <div className="row myrow"style={{color:"black"}}>
                 <div className="col-md-4"></div>
                 <div style={{marginLeft:"3%"}} className="col-md-4">
                 <form>

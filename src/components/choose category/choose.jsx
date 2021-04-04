@@ -36,9 +36,9 @@ class Choose extends Component {
     
     render() { 
         return ( 
-            <div>
+            <div style={{marginRight:"11%"}}>
                
-               <div className="con text-center center-container">
+               <div className="con text-center ">
                 <div className="container ce">
                     <h5 className="display-4"><span className="badge badge-danger"> {this.state.count}</span> {this.props.location.user.username} choose 3 you like.</h5>
                     <p className="lead">it will help us find TV shows and movies you will love !</p>

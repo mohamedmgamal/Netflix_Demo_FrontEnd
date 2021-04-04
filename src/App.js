@@ -27,8 +27,8 @@ function App() {
   // if (!localStorage.token)
   //   return <Home/>
   // else
-    return <Home/>
-    //return <NoAuth/>
+    //return <Home/>
+    return <NoAuth/>
 
 
 }

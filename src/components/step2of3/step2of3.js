@@ -19,14 +19,14 @@ class Step2Of3 extends React.Component{
                     {/* <FaCheckCircle className="omar"/>  */}
                     <div className="image"><img src={logo}></img></div>
                     <div className="Header-container">
-                        <div className="header">
+                        <div className="header"style={{color:"black"}}>
                             <span>
                                 STEP <b>1</b> OF <b> 3</b>
                                 <h4><b>Choose your plan.</b></h4>
                             </span>
                         </div>
                     </div>
-                    <div className="contextBody contextRow "style={{marginLeft:"25%"}}>
+                    <div className="contextBody contextRow "style={{marginLeft:"25%",color:"black"}}>
                         <ul className="plan">
                         <li><FaCheck className="check-group-icon"/> <span className="check-group-text">No commitments, cancel anytime.</span></li>
                         <li><FaCheck className="check-group-icon"/> <span className="check-group-text">Everything on Netflix for one low price..</span></li>
