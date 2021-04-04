@@ -9,6 +9,7 @@ import {Modal,Button,Row,Col,Form,Container} from 'react-bootstrap';
 function Banner() {
     const [movie, setMovie] = useState([]);
     const [modalShow, setModalShow] = useState(false);
+    
 
     useEffect(()=>{
       async function fetchData(){
@@ -76,11 +77,11 @@ function MydModalWithGrid(props) {
         return str?.length >n ?str.substr(0,n-1)+"...":str;
     }
   return (
-    <Modal {...props} aria-labelledby="contained-modal-title-vcenter " style={{marginTop:'100px',color:'black'}}>
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter " style={{marginTop:'100px',color:'black',border:'none'}}>
       {/* <Modal.Header closeButton>
         
       </Modal.Header> */}
-      <Modal.Body className="show-grid" closeButton style={{backgroundColor:'black',opacity:'0.9',border:'none'}}>
+      <Modal.Body className="show-grid" closeButton style={{backgroundColor:'black',opacity:'0.9',}}>
        
           <Row>
             <Col xs={12} md={12}>
@@ -106,9 +107,7 @@ function MydModalWithGrid(props) {
                     
                     
                     
-                    {/* <button className="popup_button ">
-                    <i class="fa fa-info-circle"></i> more info
-                    </button> */}
+                   
                 </div>
                  
                 </div>
@@ -118,22 +117,24 @@ function MydModalWithGrid(props) {
         </section>
              
             </Col>
-            {/* <Col xs={6} md={4}>
-              .col-xs-6 .col-md-4
-            </Col> */}
+           
           </Row>
 
-          {/* <Row>
-            <Col xs={6} md={4}>
-              .col-xs-6 .col-md-4
+          <Row>
+            <Col xs={8} md={8}>
+              <p className='watching'><span className='watching'>98% Match </span><span className='year'>2020 </span><span className='age'>+18</span><span className='season'>3 season </span><span className='production'>ED</span></p>
+              <p className='top10'>Top 10 in EGYPT</p>
+              <p className='overview'> {trancate(movie?.overview,80)}</p>
             </Col>
-            <Col xs={6} md={4}>
-              .col-xs-6 .col-md-4
+            <Col xs={8} md={4}>
+            <div className='cast'><span>Cast:</span>Ahmed Alaa</div>
+            <div className='geners'><span>Geners:</span>Crime,Action</div>
+            <div className='show'><span>This show is:</span> susbenseful</div>
+
+              
             </Col>
-            <Col xs={6} md={4}>
-              .col-xs-6 .col-md-4
-            </Col>
-          </Row> */}
+            
+          </Row>
         
       </Modal.Body>
       
