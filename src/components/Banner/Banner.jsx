@@ -121,15 +121,15 @@ function MydModalWithGrid(props) {
           </Row>
 
           <Row>
-            <Col xs={8} md={8}>
-              <p className='watching'><span className='watching'>98% Match </span><span className='year'>2020 </span><span className='age'>+18</span><span className='season'>3 season </span><span className='production'>ED</span></p>
+            <Col xs={8} md={7}>
+              <p className='watch'><span className='watching'>98% Match </span><span className='year'>2020 </span><span className='age'>18+</span><span className='season'> 3 season </span></p>
               <p className='top10'>Top 10 in EGYPT</p>
               <p className='overview'> {trancate(movie?.overview,80)}</p>
             </Col>
-            <Col xs={8} md={4}>
-            <div className='cast'><span>Cast:</span>Ahmed Alaa</div>
-            <div className='geners'><span>Geners:</span>Crime,Action</div>
-            <div className='show'><span>This show is:</span> susbenseful</div>
+            <Col xs={4} md={5}>
+            <div className='cast'><span className='sp1'>Cast: </span>Ahmed Alaa</div>
+            <div className='geners'><span className='sp2'>Geners: </span>Crime,Action</div>
+            <div className='show'><span className='sp3'>This show is: </span> susbenseful</div>
 
               
             </Col>
