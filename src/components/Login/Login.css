@@ -46,7 +46,7 @@ input[type=text], input[type=submit], input[type=password] {
     text-align: left;
     font-weight: 700;
     margin: 24px 0 12px;
-    padding-left :10px; 
+    padding-left :10px;
     background-color: rgb(51, 51, 51);
 }
  input[type="submit"]{
@@ -109,9 +109,11 @@ input[type=text], input[type=submit], input[type=password] {
     left: 12%; 
     margin-top: 145px; 
 }
+.log {
+    color: white;
+}
 .log a{
     color: white;
-    text-decoration: none;
 }
 .more{
     position: absolute;
@@ -119,6 +121,7 @@ input[type=text], input[type=submit], input[type=password] {
     left: 12%; 
     margin-top: 175px; 
     text-align: left;
+    color: white;
 }
 .more a{
     text-decoration: none;

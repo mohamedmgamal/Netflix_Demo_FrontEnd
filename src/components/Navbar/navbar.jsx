@@ -7,7 +7,7 @@ class Navbar extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                <nav className="navbar fixed navbar-expand-lg">
+                <nav className="navbar navbar_x fixed navbar-expand-lg">
                     <div className="container-fluid">
                         <img className="navbar-brand"
 						src='https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg'
