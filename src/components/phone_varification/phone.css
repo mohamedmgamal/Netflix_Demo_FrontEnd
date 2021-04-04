@@ -1,5 +1,8 @@
 
-
+  .maain{
+      max-width: 800px;
+      margin-top: 5%;
+  }
 
   .in{
       max-width: 600px;
@@ -9,7 +12,7 @@
       padding: 15px;
       border-radius: 5px;
   }
-  .btn{
+  .btt{
      margin-top: 5px;
      margin-bottom: 5px;
   }

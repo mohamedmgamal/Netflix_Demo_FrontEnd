@@ -71,6 +71,7 @@ class Phone extends Component{
     render() {
         return (
            
+
              <div className=" col-12 col-sm-6 main center-container">
                  <div className="row">
                      <div className="text-left">
@@ -94,7 +95,7 @@ class Phone extends Component{
                               
                               
                               
-                              <input type="submit" className="btn btn-danger btn-lg btn-block" value="Send code"/>
+                              <input type="submit" className="btn btn-danger btn-lg btn-block btt" value="Send code"/>
                                     
                                 
                           </form>   
@@ -106,7 +107,7 @@ class Phone extends Component{
                                   <input type="number" className="form-control in " name="otp" onChange={this.onChangeHandler}></input>
                               </div>
                               
-                              <input type="submit" className="btn btn-danger btn-lg btn-block" value="Verifiy"/>
+                              <input type="submit" className="btn btn-danger btn-lg btn-block btt" value="Verifiy"/>
                                     
                                 
                           </form>   
