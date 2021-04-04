@@ -4,13 +4,8 @@
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Landing/Landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Landing/Landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Landing/Landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Landing/Landing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/choose category/choose.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/choose category/choose.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/phone_varification/phone.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/phone_varification/phone.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +104,7 @@
       <workItem from="1617320841640" duration="68000" />
       <workItem from="1617404197794" duration="2368000" />
       <workItem from="1617409358488" duration="906000" />
+      <workItem from="1617549701370" duration="606000" />
     </task>
     <servers />
   </component>
