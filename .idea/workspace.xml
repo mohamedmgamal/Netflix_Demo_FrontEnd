@@ -4,8 +4,9 @@
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plans/plans.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/plans/plans.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,8 @@
       <workItem from="1617320841640" duration="68000" />
       <workItem from="1617404197794" duration="2368000" />
       <workItem from="1617409358488" duration="906000" />
-      <workItem from="1617549701370" duration="606000" />
+      <workItem from="1617549701370" duration="1837000" />
+      <workItem from="1617553721331" duration="628000" />
     </task>
     <servers />
   </component>

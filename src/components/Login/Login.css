@@ -13,7 +13,7 @@
 @font-face{
     font-family: Cairo-light;
 }
-form{
+.form_x{
     width: 530px;
     height: 750px;
     position: absolute;
@@ -26,14 +26,14 @@ form{
     opacity: 0.9;
 }
 
-form h1{
+.form_x h1{
     font-family: Cairo-Bold;
     text-align: left;
     margin:70px 67px 17px;
     color: white;
     font-weight: bold;
 }
-input[type=text], input[type=submit], input[type=password] {
+.form_x input[type=text], .form_x input[type=submit],.form_x input[type=password] {
     width: 400px;
     border-radius: 10px;
     border: none;
@@ -49,7 +49,7 @@ input[type=text], input[type=submit], input[type=password] {
     padding-left :10px;
     background-color: rgb(51, 51, 51);
 }
- input[type="submit"]{
+ .form_x input[type="submit"]{
      text-align: center;
  }
  #errmsg{
@@ -126,7 +126,7 @@ input[type=text], input[type=submit], input[type=password] {
 .more a{
     text-decoration: none;
 }
-form h6{
+.form_x h6{
     color: yellow;
     padding-right: 12%;
     text-align: right;
@@ -143,16 +143,16 @@ form h6{
     #errmsg{
         width:80%
     }
-    input{
+  .form_x  input{
         width:80% !important;
     }
-    form{
+    .form_x{
         margin-top: 150px;
         width: 90%;
         height: 676px;
         
     }
-    form h1{
+    .form_x h1{
         margin:70px 20px 17px;
     }
     .face{
@@ -179,7 +179,7 @@ form h6{
         position:absolute;
         left : 2%;
     }  
-     input[type='checkbox']{
+     .form_x input[type='checkbox']{
         position: absolute;
         left: 2px;
     } 
@@ -193,20 +193,17 @@ form h6{
         width: 25%;
         height: 60px;
     }
-    input{
-        width:80% !important;
-    }
     #errmsg{
         width:80%
     }
-    form{
+    .form_x{
         margin-top: 120px;
         width: 90%;
         height: 700px;
         
         
     }
-    form h1{
+    .form_x h1{
         margin:70px 20px 17px;
     }
     .face{
@@ -233,7 +230,7 @@ form h6{
         position:absolute;
         left : 5%;
     }  
-     input[type='checkbox']{
+     .form_x input[type='checkbox']{
         position: absolute;
         left: 2px;
     } 
@@ -247,20 +244,18 @@ form h6{
         width: 25%;
         height: 60px;
     }
-    input{
-        width:67% !important;
-    }
+
     #errmsg{
         width:67%
     }
-    form{
+    .form_x{
         margin-top: 50px;
         width: 70%;
         height: 750px;
         
         
     }
-    form h1{
+    .form_x h1{
         margin:70px 20px 17px;
     }
     .face{
@@ -312,20 +307,18 @@ form h6{
         width: 20%;
         height: 60px;
     }
-    input{
-        width:80% !important;
-    }
+
     #errmsg{
         width:80%
     }
-    form{
+    .form_x{
         margin-top: 50px;
         width: 70%;
         height: 750px;
         
         
     }
-    form h1{
+    .form_x h1{
         margin:70px 20px 17px;
     }
     .face{
@@ -352,7 +345,7 @@ form h6{
         position:absolute;
         left : 10%;
     }  
-     input[type='checkbox']{
+     .form_x input[type='checkbox']{
         position: absolute;
         left: 2px;
     } 
@@ -385,7 +378,7 @@ footer h5{
     padding-top: 39px;
 }
 @media screen and (min-width:768px) and (max-width:1023px){
-    form{
+    .form_x{
         height: 650px;
         top: 45%;
         left: 50%;
@@ -397,7 +390,7 @@ footer h5{
     }
 }
 @media screen and (min-width:1024px) and (max-width:1366px){
-    form{
+    .form_x{
         height: 750px;
         top: 45%;
         left: 50%;

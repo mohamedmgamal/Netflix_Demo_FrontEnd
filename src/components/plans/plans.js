@@ -21,7 +21,7 @@ class Plans extends React.Component{
     }
     render(){
         return (
-            <div className="container first  center-container">
+            <div className="container firstplan  center-container">
 
 
                 <div className="col-12 ">
