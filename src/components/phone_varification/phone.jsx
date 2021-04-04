@@ -3,18 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import firebase from './firebase';
 import './phone.css';
 require('firebase/auth');
-
-
-
-class Phone extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
+class Phone extends Component{
+    state = {
             form: true,
             alert: false,
-            verify:""
-            
-         }
+            verify:"",
+         phoneNumber:""
+    }
+    next=()=>{
+        this.props.location.user.phoneNumber=this.state.phoneNumber
+        this.props.history.push( {pathname: '/Categories',
+            user :this.props.location.user,
+            plan:this.props.location.plan})
     }
     onChangeHandler = (event) => {
         const { name, value } = event.target;
@@ -35,7 +35,8 @@ class Phone extends Component {
     onSignInSubmit=(event)=>{
         event.preventDefault();
         this.setupRecaptcha();
-        const phoneNumber ="+2"+this.state.mobile;
+        var phoneNumber ="+2"+this.state.mobile;
+        this.setState({phoneNumber:phoneNumber})
         console.log(phoneNumber);
         const appVerifier = window.recaptchaVerifier;
         firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
@@ -50,31 +51,32 @@ class Phone extends Component {
           });
             }
             onSubmitOtp = (event) => {
+                let success=true;
                 event.preventDefault();
                 let otpInput = this.state.otp;
                 let optConfirm = window.confirmationResult;
-              
                 optConfirm
                   .confirm(otpInput)
                   .then(function (result) {
-                    
-                     console.log("Number is Verified");
-                      
-                    let user = result.user;
+                      console.log("Number is Verified");
                   })
                   .catch(function (error) {
                     console.log(error);
                     alert("Incorrect OTP");
+                    success=false
                   });
-              };
-    render() { 
-        return ( 
+            if (success)
+            { this.state.user.phoneNumber=this.state.phoneNumber;
+                this.next()}};
+    render() {
+        return (
            
-             <div className="container maain">
-                 <div className="row justify-content-center align-items-center ">
-                     <div className="col-sm-6 text-left ">
+
+             <div className=" col-12 col-sm-6 main center-container">
+                 <div className="row">
+                     <div className="text-left">
                      
-                          <h1 >Welcom to Netflix!</h1>
+                          <h1 style={{fontWeight:"bold",textAlign:"center"}} >Welcome to Netflix!</h1>
                             <p>You've started your membership and we emaild the details to you</p>
                             
                         <div className="sec">
@@ -98,7 +100,7 @@ class Phone extends Component {
                                 
                           </form>   
                           
-                          <form  onSubmit={this.onSubmitOtp}>
+                          <form  onSubmit={this.next}>
                              
                               <div className="form-group">
                                   <label>Please Enter OTP</label>

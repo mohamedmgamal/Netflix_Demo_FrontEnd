@@ -9,7 +9,7 @@ import Navbar from "../Navbar/navbar";
 
 function Home(){
     return(
-       <div>
+       <div style={{background:"black",paddingBottom:"5%"}}>
             <Navbar/>
             <div style={{margin:"0px",marginTop:"5%"}}>
             <Banner />

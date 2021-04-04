@@ -13,8 +13,8 @@ class Landing extends Component {
     state = {  }
     render() { 
         return ( 
-            <React.Fragment>
-                <section className="first" style={{backgroundImage:''}}>
+            <div className="landing">
+                <section className="first" >
                 <img id="netflixlogo" src={logo} alt="netflixlogo"/>
                 <Link to={"/login"} ><button id="loginbutton" type="button" className="btn btn-danger">Sign in</button></Link>
                 <div className="first11 text-center">
@@ -210,7 +210,7 @@ class Landing extends Component {
         </footer>
     </section> */}
     
-            </React.Fragment>
+            </div>
          );
     }
 }
