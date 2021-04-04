@@ -11,7 +11,7 @@ function Home(){
     return(
        <div style={{background:"black",paddingBottom:"5%"}}>
             <Navbar/>
-            <div style={{margin:"0px",marginTop:"5%"}}>
+            <div style={{margin:"0px",marginTop:"4%"}}>
             <Banner />
             </div>
            

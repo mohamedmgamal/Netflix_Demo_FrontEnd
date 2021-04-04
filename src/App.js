@@ -28,7 +28,7 @@ function App() {
   //   return <Home/>
   // else
     //return <Home/>
-    return <NoAuth/>
+    return <Home/>
 
 
 }

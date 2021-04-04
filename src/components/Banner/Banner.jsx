@@ -86,7 +86,7 @@ function MydModalWithGrid(props) {
           <Row>
             <Col xs={12} md={12}>
         <section id='popup' className='pb-8'>
-            <div className='jumbotron jumbotron-fluid'>
+            <div className='jumbotron jumbotron-fluid col-12'>
                 <video autoPlay  muted loop poster='https://www.themoviedb.org/t/p/w533_and_h300_bestv2/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg' >
                     <source src={bg} type='video/mp4'></source>
                 </video>

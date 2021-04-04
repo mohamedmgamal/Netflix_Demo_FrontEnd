@@ -19,21 +19,13 @@ function Raw({title,fetchUrl,isLargeRow}){
     },[fetchUrl])
 
     console.log(movies);
-
     
     return(
         <div className="row">
-        
             <h2>{title}</h2>
             <div className="row__posters">
                 {movies.map( movie =>(
-                <img
-                    key={movie.id}
-                    className={`row__poster ${isLargeRow && "row__posterLarge"}`} 
-                    src={`${base_url}${
-                        isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
-                    alt={movie.name}
-                    />
+                    <Movie movie={movie} islarge={isLargeRow}/>
                 ))}
             </div>
         </div>
@@ -41,6 +33,36 @@ function Raw({title,fetchUrl,isLargeRow}){
 
         
         
+    )
+}
+export function Movie(props) {
+    const [style, setStyle] = useState({display: 'none'});
+    return (
+        <div style={{position:"inherit"}}>
+            <div className="HiddenDiv" style={style} onMouseLeave={e => {
+                setStyle({display: 'none'})
+            }}
+                 onMouseEnter={event => {
+                     setStyle({display: ''}
+                         )
+                 }}>
+                <div className="miniHidden"><h1>{props.movie.name}</h1></div>
+
+
+            </div>
+            <img
+                onMouseLeave={e => {
+                    setStyle({display: 'none'})
+                }}
+                onMouseEnter={event => {
+                    setStyle({display: ''},
+                        console.log("enterd"))
+                }}
+                key={props.movie.id}
+                src={`${base_url}${
+                    props.isLargeRow ? props.movie.poster_path : props.movie.backdrop_path}`}
+                alt={props.movie.name}
+            /></div>
     )
 }
 export default Raw;

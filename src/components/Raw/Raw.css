@@ -12,22 +12,35 @@
 .row__posters::-webkit-scrollbar{
     display: none;
 }
-.row__poster{
-    object-fit:contain;
-    width: 100%;
-    max-height: 100px;
-    margin-right: 10px;
-    transition: transform 450ms;
+/*.row__poster{*/
+/*    object-fit:contain;*/
+/*    width: 100%;*/
+/*    max-height: 100px;*/
+/*    margin-right: 10px;*/
+/*    transition: transform 450ms;*/
+/*}*/
+/*.row__poster:hover{*/
+/*    transform: scale(1.08);*/
+
+/*}*/
+/*.row__posterLarge{*/
+/*    max-height: 250px;*/
+/*}*/
+/*.row__posterLarge:hover{*/
+/*    transform: scale(1.09);*/
+/*}*/
+.HiddenDiv{
+    width:11.5%;
+    height:14%;
+    position:absolute;
+    z-index:20;
+    background-color: #e50913;
 }
-.row__poster:hover{
-    transform: scale(1.08);
-    
-}
-.row__posterLarge{
-    max-height: 250px;
-}
-.row__posterLarge:hover{
-    transform: scale(1.09);
-    
+.miniHidden{
+    position: absolute;
+    top:-100%;
+    width: 50vh;
+    height: 60vh;
+    background-color: #61dafb;
 }
 
