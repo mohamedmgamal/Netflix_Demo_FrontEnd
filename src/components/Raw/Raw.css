@@ -39,8 +39,9 @@
 .miniHidden{
     position: absolute;
     top:-100%;
-    width: 50vh;
-    height: 60vh;
+    padding: 5%;
+    left: -50%;
+    height: 50vh;
     background-color: #61dafb;
 }
 
