@@ -41,7 +41,7 @@
 .landing {
   color: white;
   background-color: black;
-  padding-bottom: 10%;
+  padding-bottom: 1%;
 }
 .first {
   background-image: url('images/cover.jpg');
@@ -400,8 +400,8 @@
   }*/
 .footer {
   background-color: grey;
-  margin-top: 200px;
-  height: 350px;
+  margin-bottom: -10%;
+  padding-bottom: 5%;
 }
 a {
   float: left;

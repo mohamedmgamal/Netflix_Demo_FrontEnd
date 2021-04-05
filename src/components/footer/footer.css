@@ -1,8 +1,9 @@
 .footer-dark {
-  margin-top: 200px;
-  height: 350px;
+  /*margin-top: 200px;*/
+  /*height: 350px;*/
   color: #f0f9ff;
   border-top: 1px solid silver;
+
 }
 a {
   float: left;

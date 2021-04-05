@@ -37,7 +37,7 @@ class Landing extends Component {
                                 <h2>Enjoy on your TV.</h2>
                                 <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast,<br/> Apple TV, Blu-ray players, and more.</h3>
                             </div>
-                          <div className="col-md-5 col-xs-12">
+                          <div className="col-md-5 col-12">
                                 <img className="img-fluid col-12" src={second} alt=""/>
                             
                         </div>
@@ -45,7 +45,7 @@ class Landing extends Component {
                  </section>
                  <section className="third">
                         <div className="row">
-                            <div className="col-md-5 col-xs-12">
+                            <div className="col-md-5 col-12">
                                 <img className="img-fluid col-12" src={third} alt=""/>
                             </div>
                             <div className="third-text col-md-6 col-xs-6">
@@ -62,7 +62,7 @@ class Landing extends Component {
                                 <h3>Stream unlimited movies and TV shows on <br/>your phone, tablet, laptop, and TV without<br/>paying more.</h3>
                             </div>
                             <div className="col-md-5 col-xs-12">
-                                <img className="img-fluid" src={fourth} alt=""/>
+                                <img className="img-fluid col-12" src={fourth} alt=""/>
                                 
                             </div>
                         
