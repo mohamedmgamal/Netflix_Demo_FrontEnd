@@ -27,7 +27,6 @@ function Banner() {
         <section id='jumtron' className='pb-5'>
             <div className='jumbotron jumbotron-fluid col-12'style={{height:"100vh"}}>
                 <video autoPlay  muted loop poster='https://www.themoviedb.org/t/p/w533_and_h300_bestv2/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg' >
-                    <source src={bg} type='video/mp4'></source>
                 </video>
                 <div className='container co text-light 'style={{marginLeft:"0%",marginTop:"20%"}}>
                 <h1 className="display-4">
