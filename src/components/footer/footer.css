@@ -1,35 +1,36 @@
-.footer{
-    background-color: grey;
+.footer-dark {
+  margin-top: 200px;
+  height: 350px;
+  color: #f0f9ff;
+  border-top: 1px solid silver;
+}
+a {
+  float: left;
+  color: black;
+}
 
+.line {
+  margin-top: 10px;
+  margin-left: 35px;
 }
-a{
-    float: left;
-    color: black;
-}
-
-.line{
-    margin-top:10px;
-    margin-left: 35px;
-}
-.line div{
-    margin-top: 15px;
+.line div {
+  margin-top: 15px;
 }
 .links {
-    margin-top:20px;
-    margin-left: 20px;
-
+  margin-top: 20px;
+  margin-left: 20px;
 }
-.links2{
-    margin-top:15px;
-    margin-left: 20px;
+.links2 {
+  margin-top: 15px;
+  margin-left: 20px;
 }
-.links3{
-    margin-top:15px;
-    margin-left: 20px;
+.links3 {
+  margin-top: 15px;
+  margin-left: 20px;
 }
-.dropdown button{
-    background-color: lightslategray;
-    width: 150px;
-    margin-top: 15px;
-    margin-left: 15px;
+.dropdown button {
+  background-color: lightslategray;
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
