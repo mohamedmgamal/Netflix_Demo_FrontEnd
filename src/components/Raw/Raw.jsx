@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from './axios'
-import './Raw.css'
+import './Raw.css';
+import mv from './movie.mp4';
+
 
 const base_url="https://image.tmdb.org/t/p/original/"
 
@@ -46,7 +48,29 @@ export function Movie(props) {
                      setStyle({display: ''}
                          )
                  }}>
-                <div className="miniHidden"><h1>{props.movie.name}</h1></div>
+                <div className="miniHidden">
+                    <video className="video" autoPlay  muted loop poster='https://www.themoviedb.org/t/p/w533_and_h300_bestv2/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg'>
+                        <source src={mv} type='video/mp4'></source>
+                    </video>
+                    <div className="icons">
+                        <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet"></link>
+                        <i class="fa fa-play-circle fa-2x"></i>
+                        <i class="fal fa-plus-circle fa-2x"></i>
+                        <i class="fal fa-thumbs-up fa-2x"></i>
+                        <i class="fal fa-thumbs-down fa-2x"></i>
+                        <i class="fal fa-chevron-circle-down fa-2x"></i>
+                    </div>
+                    <div id='watch'>
+                        <span id='match'>98% Match </span>
+                        <span id='age'>18+</span>
+                        <span id='season'> 3 Seasons </span>
+                    </div>
+                    <div id="category">
+                        <span id="chilling">Chilling</span>
+                        <span id="scary">Scary</span>
+                        <span id="horror">Horror</span>
+                    </div>
+                </div>
 
 
             </div>
