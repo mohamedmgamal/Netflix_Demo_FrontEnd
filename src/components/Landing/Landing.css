@@ -16,321 +16,346 @@
     font-family: Cairo-light;
     src: url(../fonts/Cairo-Light.ttf);
 } */
-.landing{
-    color: white;
-    background-color: black;
-    padding-bottom: 10%;
-}
-.first{
-    background-image: url("images/cover.jpg");
-    background-size: cover;
-    height: 800px;
-    margin-top: 0;
-}
-#netflixlogo{
-    position: absolute;
-    left: 5%;
-    top: 5%;
-    width: 10%;
-    height: 60px;
-}
-#loginbutton{
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    width: 135px;
-    height: 50px;
-}
-#loginbutton:hover{
-    color: red;
-    border: none;
-    outline: none !important;
-    background-color: yellow;
-    transition: all 0.6s ease-in-out;
-}
-.first11{
-    width: 75%;
-    height: 400px;
-    /* text-align: center; */
-    margin: auto;
-    padding-top: 15%;
-}
-.first11 p{
-    font-size: 50px;
-    /* text-align: center; */
-    color: white;
-    line-height: 80px;
-}
-.first11 h2{
-    margin-top: 20px;
-    font-family: Cairo-light;
-}
-.first11 h3{
-    margin-top: 20px;
-    margin-bottom: 50px;
-    font-family: Cairo-light;
-}
-.input-group{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.input-group-text{
-    background-color: red;
-    height: 50px;
-}
-.input-group a{
-    text-decoration: none;
-    color:white;
+.input-group-prepend {
+  margin-top: 15px;
 }
 
-@media screen and (min-width:320px) and (max-width:480px){
-    #netflixlogo{
-        width: 25%;
-    }
-    .input-group{
-        width: 90%;
-    }
-    .first11 p{
-        margin-top: 50px;
-        font-size: 40px;
-        color: white;
-        line-height: 110px;
-    }
-    .second{
-        border-top: 10px solid grey;
-        min-height: 900px !important;
-        max-height: 1000px !important;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        
-    }
-    .third{
-        min-height: 920px !important;
-        max-height: 1020px !important;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .third img{
-        height: 400px;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        padding-top:70px;
-    }
-    .fourth{
-        min-height: 920px !important;
-        max-height: 1020px !important;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .block{
-        margin-top: 20px;
-    }
+.second-text {
+  /* margin-left: 100px; */
+  padding-left: 70px;
+  margin-top: 70px;
 }
-@media screen and (min-width:481px) and (max-width:768px){
-    .first{
-        min-height: 700px !important;
-        max-height: 850px !important;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        
-    }
-    .second{
-        
-        /* height: 650px !important;  */
-        min-height: 850px !important;
-        max-height: 1000px !important;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        
-    }
-    .third{
-        /* height: 720px !important; */
-        min-height: 850px !important;
-        max-height: 1000px !important;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        
-    }
-    .fourth{
-        min-height: 950px !important;
-        max-height: 1050px !important;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .block{
-        margin-top: 20px;
-    }
+.third img {
+  height: 350px;
+  padding-top: 50px;
 }
-@media screen and (min-width:769px) and (max-width:1024px){
-    .first{
-        height: 750px !important;
-    }
-    .second{
-        
-        height: 520px !important;
-        
-    }
-    .third{
-        height: 540px !important;
-        
-    }
-    .fourth{
-        height: 540px !important;
-        
-    }
-    .block{
-        margin-top: 20px;
-    }
+.third-text {
+  height: 350px;
+  padding-top: 50px;
+  font-size: 50px;
 }
-@media screen and (min-width:1025px) and (max-width:1200px){
-    .first{
-        height: 750px !important;
-    }
+.third-text h2 {
+  margin-bottom: 40px;
 }
 
+.landing {
+  color: white;
+  background-color: black;
+  padding-bottom: 1%;
+}
+.first {
+  background-image: url('images/cover.jpg');
+  background-size: cover;
+  height: 800px;
+  margin-top: 0;
+}
+#netflixlogo {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 10%;
+  height: 60px;
+}
+#loginbutton {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 135px;
+  height: 50px;
+}
+#loginbutton:hover {
+  color: red;
+  border: none;
+  outline: none !important;
+  background-color: yellow;
+  transition: all 0.6s ease-in-out;
+}
+.first11 {
+  width: 75%;
+  height: 400px;
+  /* text-align: center; */
+  margin: auto;
+  padding-top: 15%;
+}
+.first11 p {
+  /* font-size: 50px; */
+  text-align: center;
+  color: white;
+  line-height: 80px;
+}
+.first11 h2 {
+  margin-top: 20px;
+  font-family: Cairo-light;
+}
+.first11 h3 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: Cairo-light;
+}
+.input-group {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.input-group-text {
+  background-color: red;
+  height: 60px;
+}
+.input-group a {
+  text-decoration: none;
+  color: white;
+}
 
-
-
-.second{
-    border-top: 10px solid grey;
-    height: 450px;
-    
-}
-.second img{
-    height: 400px;
-    width: 80%;
-    padding-top:70px;
-    margin-top: 0;
-}
-.second h2{
-    font-size: 50px;
-    font-weight: 900;
-    text-align: left; 
-    /* padding-top: 110px; */
-    padding-right: 10%;
-}
-.second h3{
-    font-size: 1.625rem;
-    font-family: Cairo-light;
-    text-align: left;
-    line-height: 40px;
-    padding-top: 25px;
-}
-.third{
-    border-top: 10px solid grey;
-    height: 500px;
-    
-}
-.third img{
-    height: 385px;
-    width: 78%;
-    padding-top:70px;
-}
-.third h2{
-    font-size: 50px;
-    font-weight: 900;
-    padding-top: 110px;
-}
-.third h3{
-    font-size: 1.625rem;
-    font-family: Cairo-light;
-    padding-top: 25px;
-    line-height: 40px;
-}
-.fourth{
-    border-top: 10px solid grey;
-    height: 500px;
-    
-}
-.fourth img{
-    height: 400px;
-    width: 80%;
-    padding-top:70px;
-}
-.fourth h2{
-    font-size: 50px;
-    font-weight: 900;
-    /* text-align: justify; */
-    padding-top: 110px;
-    padding-right: 10%;
-}
-.fourth h3{
-    font-size: 1.625rem;
-    font-family: Cairo-light;
-    padding-top: 25px;
-    padding-right: 10%;
-    line-height: 40px;
-}
-#video{
-    height: 400px;
-    width: 80%;
-    padding-top:70px;
-    border: none;
-}
-.fifth{
-    border-top: 10px solid grey;
-    min-height: auto;
-
-    /* height:500px; */
-    
-    margin-left: auto;
-    margin-right: auto;
-}
-.fifth h1{
-    text-align: center;
-    font-weight: 900;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #netflixlogo {
+    width: 25%;
+  }
+  .input-group {
+    width: 90%;
+  }
+  .first11 h1 {
     margin-top: 70px;
-    margin-bottom: 40px;
-}
-.fifth11 p{
-    font-size: 22px;
-    padding: 15px;
-    text-align: justify;
-}
-.fifth11{
-    width: 60%;
+    font-size: 40px;
+    color: white;
+    line-height: 50px;
+  }
+
+  .second {
+    border-top: 10px solid grey;
+    min-height: 900px !important;
+    max-height: 1000px !important;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .second-text {
+    padding: 0;
+    padding-top: 25px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0;
+  }
+  .second h2 {
+    margin-bottom: 20px;
+  }
+  .second img {
+    padding-top: 50px;
+  }
+
+  .third {
+    min-height: 920px !important;
+    max-height: 1020px !important;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    padding: 0;
+  }
+  .third h2 {
+    margin-bottom: 30px;
+  }
+  .second-text {
+    padding-top: 0;
+    margin: 0;
+  }
+  .block {
+    margin-top: 20px;
+  }
+  .col-3 {
+    display: none;
+  }
 }
-.mylinks{
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .first {
+    min-height: 700px !important;
+    max-height: 850px !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .second {
+    /* height: 650px !important;  */
+    min-height: 850px !important;
+    max-height: 1000px !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .third {
+    /* height: 720px !important; */
+    min-height: 850px !important;
+    max-height: 1000px !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .fourth {
+    min-height: 950px !important;
+    max-height: 1050px !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .block {
+    margin-top: 20px;
+  }
+  .col-3 {
+    border-top: 10px solid grey;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .first {
+    height: 750px !important;
+  }
+  .second {
+    height: 520px !important;
+  }
+  .third {
+    height: 540px !important;
+  }
+  .fourth {
+    height: 540px !important;
+  }
+  .block {
+    margin-top: 20px;
+  }
+  .col-3 {
+    border-top: 10px solid grey;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .first {
+    height: 750px !important;
+  }
+}
+.col-3 {
+  border-top: 10px solid grey;
+}
+.second {
+  border-top: 10px solid grey;
+  height: 450px;
+}
+.second img {
+  height: 400px;
+  width: 80%;
+}
+.second h2 {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: left;
+  /* padding-top: 110px; */
+  padding-right: 10%;
+}
+.second h3 {
+  font-size: 1.625rem;
+  font-family: Cairo-light;
+  text-align: left;
+  line-height: 40px;
+  padding-top: 25px;
+}
+.third {
+  border-top: 10px solid grey;
+  height: 500px;
+}
+.col-3 {
+  border-top: 10px solid grey;
+  z-index: 1;
+}
+/*
 
+.third h2 {
+  font-size: 50px;
+  font-weight: 900;
+  padding-top: 110px;
 }
-.mylinks:hover{
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
+.third h3 {
+  font-size: 1.625rem;
+  font-family: Cairo-light;
+  padding-top: 25px;
+  line-height: 40px;
+} */
+.fourth {
+  border-top: 10px solid grey;
+  height: 500px;
 }
-.mylinks:active , .mylinks:hover,.mylinks:visited, .mylinks:focus {
-    text-decoration: none;
-    color: white;
+.fourth img {
+  height: 400px;
+  width: 80%;
+  padding-top: 70px;
 }
-.card{
-    margin-top:10px;
-    margin-bottom: 10px;
+.fourth h2 {
+  font-size: 50px;
+  font-weight: 900;
+  /* text-align: justify; */
+  padding-top: 110px;
+  padding-right: 10%;
 }
-.card-header{
-    background-color: #303030;
+.fourth h3 {
+  font-size: 1.625rem;
+  font-family: Cairo-light;
+  padding-top: 25px;
+  padding-right: 10%;
+  line-height: 40px;
 }
-.card-body{
-    background-color: #303030;
-    color: white;
-    font-family: Cairo-light;
+#video {
+  height: 400px;
+  width: 80%;
+  padding-top: 70px;
+  border: none;
+}
+/* .fifth {
+  border-top: 10px solid grey;
+  min-height: auto;
 
+  height:500px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.fifth h1 {
+  text-align: center;
+  font-weight: 900;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.fifth11 p {
+  font-size: 22px;
+  padding: 15px;
+  text-align: justify;
+}
+.fifth11 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.mylinks {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+.mylinks:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+.mylinks:active,
+.mylinks:hover,
+.mylinks:visited,
+.mylinks:focus {
+  text-decoration: none;
+  color: white;
+}
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-header {
+  background-color: #303030;
+}
+.card-body {
+  background-color: #303030;
+  color: white;
+  font-family: Cairo-light;
 }
 
 /* .accordion {
@@ -373,35 +398,38 @@
   .active:after {
     content: "\2796"; 
   }*/
-.fifth3 h3{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: Cairo-light;
-} 
+.footer {
+  background-color: grey;
+  margin-bottom: -10%;
+  padding-bottom: 5%;
+}
+a {
+  float: left;
+  color: silver;
+}
 
-footer{
-    font-family: Cairo-light;
-    border-top: 10px solid grey;
-    height: 600px;
-    opacity: 0.5;
-    /* margin-top: 465px; */
-    width: 100%;
-    background-color: black;
-    height: 380px;
+.line {
+  margin-top: 10px;
+  margin-left: 35px;
 }
-footer a{
-    color: white;
-    text-decoration: none;
-    padding-top: 20px;
+.line div {
+  margin-top: 15px;
 }
-footer a:hover{
-    color: white;
-    text-decoration:underline;
-    transition: all 0.8s ease-in-out;
+.links {
+  margin-top: 20px;
+  margin-left: 20px;
 }
-footer .row{
-    padding-top: 40px;
+.links2 {
+  margin-top: 15px;
+  margin-left: 20px;
 }
-footer h5{
-    padding-top: 80px;
+.links3 {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.dropdown button {
+  background-color: lightslategray;
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 15px;
 }

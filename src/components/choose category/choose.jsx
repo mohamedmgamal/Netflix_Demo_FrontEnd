@@ -36,7 +36,7 @@ class Choose extends Component {
     
     render() { 
         return ( 
-            <div style={{marginRight:"11%"}}>
+            <div style={{paddingRight:"5%"}}>
                
                <div className="con text-center ">
                 <div className="container ce">

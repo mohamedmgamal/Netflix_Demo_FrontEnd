@@ -6,7 +6,7 @@ import second from './images/second.png';
 import third from './images/third.png';
 import fourth from './images/fourth.png';
 import {Link} from "react-router-dom";
-
+import {Accordion,Card, Container} from 'react-bootstrap';
 
 
 class Landing extends Component {
@@ -18,9 +18,9 @@ class Landing extends Component {
                 <img id="netflixlogo" src={logo} alt="netflixlogo"/>
                 <Link to={"/login"} ><button id="loginbutton" type="button" className="btn btn-danger">Sign in</button></Link>
                 <div className="first11 text-center">
-                    <p> Unlimited movies, TV <br/> shows, and more. </p>
-                    <h2>Watch anywhere. Cancel anytime.</h2>
-                    <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <h1> Unlimited movies, TV <br/> shows, and more. </h1>
+                    <h3>Watch anywhere. Cancel anytime.</h3>
+                    <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
                     
                     <div className="input-group">
                         <input type="text" id="email1" className="form-control" placeholder="Enter your Email" aria-label="Input group example" aria-describedby="btnGroupAddon"/>
@@ -32,51 +32,136 @@ class Landing extends Component {
                 
                 </section>
                 <section className="second">
-                    <div className="container">
                         <div className="row">
-                            <div className="col-md-6 col-xs-12 text-right">
+                            <div className="second-text col-md-6 col-xs-6 ">
                                 <h2>Enjoy on your TV.</h2>
-                                <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
+                                <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast,<br/> Apple TV, Blu-ray players, and more.</h3>
                             </div>
-                            <div className="col-md-6 col-xs-12">
-                                <img src={second} alt=""/>
-                            </div>
+                          <div className="col-md-5 col-12">
+                                <img className="img-fluid col-12" src={second} alt=""/>
+                            
                         </div>
                     </div>
-
                  </section>
                  <section className="third">
-                    <div className="container">
                         <div className="row">
-                            <div className="col-md-6 col-xs-12">
-                                <img src={third} alt=""/>
+                            <div className="col-md-5 col-12">
+                                <img className="img-fluid col-12" src={third} alt=""/>
                             </div>
-                            <div className="col-md-6 col-xs-12">
-                                <h2>Download your shows<br/> to watch offline.</h2>
+                            <div className="third-text col-md-6 col-xs-6">
+                                <h2><b>Download your shows<br/> to watch offline.</b></h2>
                                 <h3>Save your favorites easily and always have something to watch.</h3>
                             </div>
-                        </div>
                     </div>
                 </section>
-                <section className="fourth">
-                    <div className="container">
+                <section className="second">
+                    
                         <div className="row">
-                            <div className="col-md-6 col-xs-12">
+                            <div className="second-text col-md-6 col-xs-6">
                                 <h2>Watch everywhere.</h2>
                                 <h3>Stream unlimited movies and TV shows on <br/>your phone, tablet, laptop, and TV without<br/>paying more.</h3>
                             </div>
-                            <div className="col-md-6 col-xs-12">
-                                <img src={fourth} alt=""/>
+                            <div className="col-md-5 col-xs-12">
+                                <img className="img-fluid col-12" src={fourth} alt=""/>
                                 
+                            </div>
+                        
+                    </div>
+                </section>
+                
+                  
+                
+                <div className="row" >
+                <div className="col-3"></div>
+                
+                <Accordion className="col-lg-6 col-sm-12" style={{borderTop:"10px solid grey"}} defaultActiveKey="0">
+                <h1 style={{textAlign:"center",marginBottom:"20px" ,marginTop:"90px"}}>Frequently Asked Questions</h1>
+                  <Card style={{border:"none"}}>
+                  <Accordion.Toggle as={Card.Header} eventKey="1">
+                    What is Netflix ?
+                  </Accordion.Toggle>
+                  <Accordion.Collapse style={{marginTop:"0px" }} eventKey="1">
+                    <Card.Body ><p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                                              <p>
+                                                  You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p></Card.Body>
+                  </Accordion.Collapse>
+                </Card>
+                <Card style={{border:"none"}}>
+                  <Accordion.Toggle as={Card.Header} eventKey="2">
+                  How much does Netflix cost ?
+                  </Accordion.Toggle>
+                  <Accordion.Collapse style={{marginTop:"0px"}} eventKey="2">
+                    <Card.Body><p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from EGP120 to EGP200 a month. No extra costs, no contracts.</p>
+                                          </Card.Body>
+                  </Accordion.Collapse>
+                </Card>
+                <Card style={{border:"none"}}>
+                  <Accordion.Toggle as={Card.Header} eventKey="3">
+                  Where can I watch ?
+                  </Accordion.Toggle>
+                  <Accordion.Collapse style={{marginTop:"0px"}} eventKey="3">
+                    <Card.Body><p>Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                                <p>You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                              </Card.Body>
+                  </Accordion.Collapse>
+                </Card>
+                <Card style={{border:"none"}}>
+                  <Accordion.Toggle  as={Card.Header} eventKey="4">
+                  How do I cancel ?
+                  </Accordion.Toggle>
+                  <Accordion.Collapse style={{marginTop:"0px"}} eventKey="4">
+                    <Card.Body><p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p></Card.Body>
+                  </Accordion.Collapse>
+                </Card>
+                <Card style={{border:"none"}}>
+                  <Accordion.Toggle as={Card.Header} eventKey="5">
+                  What can I watch in Netflix?
+                  </Accordion.Toggle>
+                  <Accordion.Collapse style={{marginTop:"0px"}} eventKey="5">
+                    <Card.Body><p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                  </Card.Body>
+                  </Accordion.Collapse>
+                </Card>
+              </Accordion>
+              <div className="col-3"></div>
+              </div>
+              
+               <div className="footer-dark col-md-12">
+
+                    <div className="footer-container">
+                        <div className="row line col-md-12 col-sm-8 col-xs-6">
+                            <div><h6><a href="#" >Questions? Contact us.</a></h6></div>
+                        </div>
+                        <div className="row links col-md-9 col-sm-6">
+                            <div class="col-md-3 col-6 "><a href="#">FAQ</a></div>
+                            <div class="col-md-3 col-6"><a href="#">Help Center</a></div>
+                            <div class="col-md-2 col-6 "><a href="#">Terms of Use</a></div>
+                            <div class="col-md-1 col-6 "><a href="#">Privacy</a></div>
+                        </div>
+                        <div class="row links2 col-md-9 col-xs-6 ">
+                            <div class="col-md-3 col-xs-3"><a href="#">Cookie Preferences</a></div>
+                            <div class="col-md-6 col-xs-"><a href="#">Corporate Information</a></div>
+                        </div>
+                        <div class="row links3 col-md-9 ">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">العربية</a></li>
+
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </section>
-    <section className="fifth">
-            <h1>Frequently Asked Questions</h1>
+
+                </div>
+            
+    {/* <section className="fifth">
+            
 
             <div className="container">
-                <div className="row">
+                
                     <div id="accordion">
                         <div className="card">
                           <div className="card-header" id="headingOne">
@@ -152,7 +237,7 @@ class Landing extends Component {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      
                 </div>
             </div>
             <div className="fifth3 text-center">
@@ -168,7 +253,7 @@ class Landing extends Component {
             </div> 
             
     </section>
-    {/* <section className="sixth">
+     <section className="sixth">
         <footer>
             <div className="container">
                 <h5><a href="">Questions? Contact us.</a></h5>
@@ -208,7 +293,7 @@ class Landing extends Component {
                 </div>
             </div>
         </footer>
-    </section> */}
+    </section>  */}
     
             </div>
          );
