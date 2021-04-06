@@ -1,7 +1,4 @@
-.myrow{
-    margin-right: 100px;
-    margin-top: 50px;
-}
+
 .center-container{
     z-index: 1;
     width: 45%;
@@ -23,7 +20,6 @@ span{
    width:100% 
 }
 input.btn{
-    width:512px;
     background-color: #E50913;
     height: 70px;
 }

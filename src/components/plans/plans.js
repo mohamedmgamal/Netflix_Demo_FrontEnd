@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class Plans extends React.Component{
     state={}
     next=()=>{
-        this.props.history.push( {pathname: '/Payment-method',
+        this.props.history.push( {pathname: '/PhoneVerification',
             user :this.props.location.user,
             plan:this.state.plan})
     }

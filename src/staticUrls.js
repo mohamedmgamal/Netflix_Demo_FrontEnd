@@ -1,3 +1,3 @@
 export class urls{
-    static HomeUrl="http://localhost:3000/"
+    static HomeUrl="https://netflix-clone-iti.herokuapp.com"
 }

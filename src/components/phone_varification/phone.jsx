@@ -12,7 +12,7 @@ class Phone extends Component{
     }
     next=()=>{
         this.props.location.user.phoneNumber=this.state.phoneNumber
-        this.props.history.push( {pathname: '/Categories',
+        this.props.history.push( {pathname: '/Payment-method',
             user :this.props.location.user,
             plan:this.props.location.plan})
     }
@@ -35,8 +35,7 @@ class Phone extends Component{
     onSignInSubmit=(event)=>{
         event.preventDefault();
         this.setupRecaptcha();
-        var phoneNumber ="+2"+this.state.mobile;
-        this.setState({phoneNumber:phoneNumber})
+        var phoneNumber ="+2"+this.state.phoneNumber;
         console.log(phoneNumber);
         const appVerifier = window.recaptchaVerifier;
         firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
@@ -87,7 +86,7 @@ class Phone extends Component{
                              
                               <div className="form-group">
                                   <label>Phone Number</label>
-                                  <input type="number" className="form-control in" name="mobile" onChange={this.onChangeHandler}></input>
+                                  <input type="number" className="form-control in" name="phoneNumber" onChange={this.onChangeHandler}></input>
                               </div>
                               <div id="recaptcha-container">
 
