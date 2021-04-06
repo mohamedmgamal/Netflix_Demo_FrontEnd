@@ -24,7 +24,7 @@ import Landing from './components/Landing/Landing';
 import Home from "./components/Home/home";
 
 function App() {
-  if (localStorage.token)
+  if (!localStorage.token)
     return <Home/>
   else
     return <NoAuth/>
