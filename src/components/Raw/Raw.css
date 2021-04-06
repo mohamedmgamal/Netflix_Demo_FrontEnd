@@ -8,26 +8,78 @@
     overflow-x: scroll;
     padding:20px;
     text-align: center;
+    cursor: pointer;
 }
 .row__posters::-webkit-scrollbar{
     display: none;
 }
-.row__poster{
-    object-fit:contain;
-    width: 100%;
-    max-height: 100px;
-    margin-right: 10px;
-    transition: transform 450ms;
-}
-.row__poster:hover{
-    transform: scale(1.08);
-    
-}
-.row__posterLarge{
-    max-height: 250px;
-}
-.row__posterLarge:hover{
-    transform: scale(1.09);
-    
-}
+/*.row__poster{*/
+/*    object-fit:contain;*/
+/*    width: 100%;*/
+/*    max-height: 100px;*/
+/*    margin-right: 10px;*/
+/*    transition: transform 450ms;*/
+/*}*/
+/*.row__poster:hover{*/
+/*    transform: scale(1.08);*/
 
+/*}*/
+/*.row__posterLarge{*/
+/*    max-height: 250px;*/
+/*}*/
+/*.row__posterLarge:hover{*/
+/*    transform: scale(1.09);*/
+/*}*/
+.HiddenDiv{
+    width:15%;
+    height:14%;
+    position:absolute;
+    z-index:9999;
+    /* background-color: #e50913; */
+}
+.miniHidden{
+    position: absolute;
+    top:-80%;
+    left: -50%;
+    height: 48vh;
+    background-color: rgb(32, 32, 32);
+    margin: 0;
+    padding: 0;
+}
+.miniHidden .video { width: 100%; }
+.miniHidden .icons {
+    margin-top: 22px;
+    position: absolute;
+    left: 10px;
+}
+.miniHidden .icons .fa-play-circle , .miniHidden .icons .fa-plus-circle ,
+.miniHidden .icons .fa-thumbs-up { margin-right: 12px; }
+
+.miniHidden .icons .fa-chevron-circle-down {
+    position:absolute;
+    right: -90%;
+}
+.miniHidden #watch{
+    margin-top: 77px;
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+}
+.miniHidden #watch #match{
+    color:seagreen;
+    margin-right: 7px;
+}
+.miniHidden #watch #age{
+    border:1px solid white;
+    margin-right: 7px;
+}
+.HiddenDiv #category {
+    margin-top: 110px;
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+}
+.HiddenDiv #category #chilling , .HiddenDiv #category #scary { margin-right: 10px; }
+@media(max-width: 767px) { .HiddenDiv { width:50%; } }
+@media(min-width: 768px) and (max-width: 991px) { .HiddenDiv { width:28%; } }
+@media(min-width: 992px) and (max-width: 1199px) { .HiddenDiv { width:20%; } }
