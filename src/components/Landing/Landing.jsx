@@ -10,7 +10,11 @@ import {Accordion,Card, Container} from 'react-bootstrap';
 
 
 class Landing extends Component {
-    state = {  }
+    state = {Email:""}
+    onChangeHandler=(e)=>{
+        this.setState({Email:e.target.value})
+        localStorage.tempemail=this.state.Email
+    }
     render() { 
         return ( 
             <div className="landing">
@@ -21,11 +25,11 @@ class Landing extends Component {
                     <h1> Unlimited movies, TV <br/> shows, and more. </h1>
                     <h3>Watch anywhere. Cancel anytime.</h3>
                     <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
-                    
+
                     <div className="input-group">
-                        <input type="text" id="email1" className="form-control" placeholder="Enter your Email" aria-label="Input group example" aria-describedby="btnGroupAddon"/>
+                        <input type="email" id="email1" className="form-control" placeholder="Enter your Email" aria-label="Input group example" aria-describedby="btnGroupAddon" onChange={this.onChangeHandler}/>
                         <div className="input-group-prepend">
-                            <div className="input-group-text" id="btnGroupAddon" onclick="start()"><a onclick="start()" href="" >Start</a></div>
+                            <div className="input-group-text" id="btnGroupAddon" style={{cursor: "grab"}}><Link to={"/signUp"} email={this.state.Email}>Start</Link></div>
                         </div>
                     </div>
                 </div>

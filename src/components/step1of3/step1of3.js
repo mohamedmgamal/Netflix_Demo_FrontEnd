@@ -1,12 +1,21 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './step1of3.css'
+import '../../staticUrls'
+import {urls} from "../../staticUrls";
 class Step1Of3 extends React.Component{
     state={
-        email:'',
+        email:"",
         password:'',
         username:'',
+        massage:''
     }
+    componentDidMount() {
+        if (localStorage.tempemail){
+            this.setState({email:localStorage.tempemail})
+        }
+    }
+
     handleChange=(e)=>{
 
         this.setState({[e.target.id]:e.target.value })
@@ -14,22 +23,37 @@ class Step1Of3 extends React.Component{
     handleSubmit=(e)=> {
         const Help = document.querySelector("#Help")
         if (this.state.email == "" || this.state.password == "" || this.state.username == "") {
-            Help.textContent = "All fields required"
+            this.setState({massage:"All fields required"})
             return
         }
-        this.props.history.push( {pathname: '/step2',
-            user : {
-            "email":this.state.email,
-                "username":this.state.username,
-                "password":this.state.password,
-            } })
+       this.setState({message:"Checking UserName availability"})
+        fetch(urls.HomeUrl+"/ifun/"+this.state.username)
+            .then(response => response.json())
+            .then(data =>{
+                console.log(data)
+                if (data.success){
+                    this.props.history.push( {pathname: '/step2',
+                        user : {
+                            "email":this.state.email,
+                            "username":this.state.username,
+                            "password":this.state.password,
+                        } })
+                }
+                else {
+                    this.setState({massage:"This user name already exists"})
+                }
+            })
+                .catch((error) => {
+                    this.setState({massage:error})
+                });
+
     }
     render(){
         return(
             <React.Fragment>
-            <div className="row myrow"style={{color:"black"}}>
+            <div className="row"style={{color:"black"}}>
                 <div className="col-md-4"></div>
-                <div style={{marginLeft:"3%"}} className="col-md-4">
+                <div  className="col-md-4">
                 <form>
                     <div className="header-container">
                         <div className="header">
@@ -51,7 +75,7 @@ class Step1Of3 extends React.Component{
                     </div>
                     <div className="mb-3">
                         <input type="password" className="form-control" onChange={this.handleChange} id='password' value={this.state.password}  placeholder="Add a password"/>
-                        <span id="Help" className="form-text" style={{color:"#E50913"}}></span>
+                        <span id="Help" className="form-text" style={{color:"#E50913"}}>{this.state.massage}</span>
                     </div>
                     <div className="mb-3 form-check">
                         <input type="checkbox" className="form-check-input" id="exampleCheck1"/>

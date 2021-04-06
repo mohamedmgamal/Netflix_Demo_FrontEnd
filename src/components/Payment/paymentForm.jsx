@@ -1,6 +1,8 @@
 import React, {Component, useState} from 'react';
 import './paymentForm.css';
 import {Link} from 'react-router-dom';
+import "../../staticUrls"
+import {urls} from "../../staticUrls";
 function PaymentForm(props){
     const [massage,setMassage]=useState("")
     const [firstName,setfirstName]=useState("")
@@ -29,14 +31,119 @@ function PaymentForm(props){
          setMassage("Invalid CCV")
          return
      }
-     props.location.user.ccName=firstName+" "+lastName
-     props.location.user.ccNumber=cardNumber
-     props.location.user.date=date
-         props.history.push({
-             pathname: '/PhoneVerification',
-             user: props.location.user,
-             plan: props.location.plan
-         })}
+     // props.location.user.ccName=firstName+" "+lastName
+     // props.location.user.ccNumber=cardNumber
+     // props.location.user.date=date
+     //     props.history.push({
+     //         pathname: '/Categories',
+     //         user: props.location.user,
+     //         plan: props.location.plan
+     //     })
+     let myDate=new Date(date)
+     let datee=myDate.getFullYear()+"-"+(myDate.getMonth()+1)+"-"+myDate.getDate();
+     console.log(datee)
+     let phone=props.location.user.phoneNumber;
+     const data = { username: props.location.user.username,
+         password:props.location.user.password,
+     email:props.location.user.email,
+     first_name:firstName,
+         PhoneNumber:"01212374338",
+         last_name:lastName,
+         cdNumber:cardNumber,
+         cdDate:datee,
+         cdName:firstName+" "+lastName
+     };
+     setMassage("Signing up")
+     fetch(urls.HomeUrl+"/signUp/", {
+         method: 'POST', // or 'PUT'
+         headers: {
+             'Content-Type': 'application/json',
+         },
+         body: JSON.stringify(data),
+     })
+         .then(response => response.json())
+         .then(data => {
+             if (data.success)
+                 login()
+             else if (data.errors)
+             setMassage(data.errors)
+         })
+         .catch((error) => {
+             console.log(error)
+         });
+
+    }
+ function getid(){
+        setMassage("Welcome to Netflix")
+     fetch(urls.HomeUrl+"/getId/"+props.location.user.username)
+         .then(response => response.json())
+         .then(data =>{
+                doPayment(data.id)
+         }).catch((error) => {
+         setMassage(error)
+     });
+
+ }
+ function doPayment(id){
+     console.log(id)
+        setMassage("Do Payment")
+        let list=["Visa","Master Card"]
+        let type = list[Math.floor(Math.random() * list.length)];
+        let price=props.location.plan.Cost;
+        var year =new Date().getFullYear()
+         var month =new Date().getMonth()
+         var day =new Date().getDate()
+         var exDate=year+"-"+(month+2)+"-"+day
+
+     const data = {
+            method: "Credit card",
+         type:type,
+         amount:price,
+         expired_date:exDate,
+         user:id
+     };
+
+     fetch(urls.HomeUrl+"/addBill/", {
+         method: 'POST', // or 'PUT'
+         headers: {
+             'Content-Type': 'application/json',
+         },
+         body: JSON.stringify(data),
+     })
+         .then(response => response.json())
+         .then(data => {
+                 props.history.push({
+                     pathname: '/Categories',
+                     user: props.location.user,
+                 })
+         })
+         .catch((error) => {
+            setMassage(error)
+         });
+ }
+ function login(){
+        console.log("login Func")
+     const data = { username:props.location.user.username,
+         password:props.location.user.password};
+     fetch(urls.HomeUrl+"/login/", {
+         method: 'POST', // or 'PUT'
+         headers: {
+             'Content-Type': 'application/json',
+         },
+         body: JSON.stringify(data),
+     })
+         .then(response => response.json())
+         .then(data => {
+            if (data.token)
+            {
+                localStorage.token=data.token
+                getid()
+            }
+         })
+         .catch((error) => {
+             setMassage(error);
+         });
+ }
          function onchange(e){
         setMassage("")
         if (e.target.id=="fn")
@@ -51,7 +158,7 @@ function PaymentForm(props){
             setCCV(e.target.value)
          }
      return (
-                <div className="container" style={{marginRight:"auto"}}>
+                <div className="container pf" >
                     <div className="paymentform">
                         <span className="step">STEP 3 OF 3</span>
                         <h3>Set Up Your Credit Or Debit Card.</h3>
