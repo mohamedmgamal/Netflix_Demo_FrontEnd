@@ -43,10 +43,11 @@
   /* background-color: #e50913; */
 }
 .miniHidden {
+  overflow: hidden;
   position: absolute;
   top: -80%;
   left: -50%;
-  height: 48vh;
+  height: 60vh;
   background-color: rgb(32, 32, 32);
   margin: 0;
   padding: 0;
