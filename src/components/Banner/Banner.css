@@ -125,6 +125,12 @@
   padding: 0;
   margin: 0;
   border-radius: 0px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+}
+.modal-body::-webkit-scrollbar {
+  display: none;
 }
 .watching {
   color: seagreen;
@@ -148,8 +154,7 @@
 .display-4 {
   padding: 20px;
 }
-.series {
-}
+
 .series-poster {
   margin: 0;
   padding-top: 20px;
