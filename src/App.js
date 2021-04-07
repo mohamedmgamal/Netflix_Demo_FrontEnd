@@ -13,7 +13,7 @@ import Choose from "./components/choose category/choose";
 import Payment from "./components/Payment/payment";
 import PaymentForm from "./components/Payment/paymentForm";
 import Devices from "./components/Payment/devices";
-import Navbar from "./components/Navbar/navbar";
+import NavBar from "./components/Navbar/navbar";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Step1Of3 from "./components/step1of3/step1of3";
@@ -22,6 +22,7 @@ import Plans from "./components/plans/plans";
 import Login from "./components/Login/Login";
 import Landing from './components/Landing/Landing';
 import Home from "./components/Home/home";
+import Account from './components/Account/account';
 
 function App() {
   if (!localStorage.token)

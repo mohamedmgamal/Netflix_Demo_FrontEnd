@@ -1,50 +1,113 @@
-* { font-family: Arial, Helvetica, sans-serif; }
+* { font-family: Arial, Helvetica, sans-serif;
+    }
 
-.navbar_x
-{ border: 1px hidden;
-    height: 80px;
+#homeNav { 
+    border: 1px hidden;
+    height: 70px;
     background-color: black; 
     position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 9999;
 }
-
-.navbar-brand { width: 9%; }
-.navbar-nav .nav-link { color: white; }
-
-#home { margin-left: 30px; }
-
-.d-flex {
-
-    margin-left: 36%;
-    margin-bottom: 15px; 
+#homeNav .NetflixLogo { margin-left: 5%; }
+#navlinks a {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+#dropdownn { 
+    list-style: none;
+    cursor: pointer; 
+    margin-right: -280px;
+}
+.userimg {
+    width: 10%;
+    border-radius: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+.dropdown-menu.show {
+    margin-left: -90px;
+    background-color: rgba(0, 0, 0, 0.979);
+}
+#DropdownItem  {
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.979);
+    width: 80%;
+}
+#dropdownn a , .navbar-text , .navbar-text i {
+    color: white;
+    cursor: pointer;
+}
+#DropdownItem:hover { background-color: rgba(255, 0, 0, 0.582);}
+.Kids {
+    margin-right: 28px;
+    margin-top: 2px;
+}
+.Gift { 
+    margin-top: 7%;
+    margin-right: 50px;
+    font-size: 28px;
+} 
+#Bell { 
+    position: absolute;
+    right: 7%;
+    top: 41%;
+}
+ .d-flex { 
+    margin-right: 2%; 
+    margin-top: -1%;
 }
 .d-flex input {
     Border-radius: 20px;
-    height: 37px;
     position: relative;
+    height:10%;
 }
 .d-flex i {
     color: red;
     position: absolute;
-    right: 19%;
+    right: 18.5%;
     top: 38%;
     cursor: pointer;
     font-weight: bold;
 }
-.navuser , .fa-caret-down {
-    color: white;
-    cursor: pointer;
+@media(max-width: 767px) {
+    #navlinks a { margin-left: 5%;}
+    #navlinks a:hover { background-color: rgba(255, 0, 0, 0.658); }
+    .d-flex input {
+        margin-left: 5%;
+        width: 90%;
+        margin-top: 15%; 
+    }
+    #dropdownn { 
+        float: right;  
+        margin-top: -23%;
+    }
+    .d-flex i {
+        right: 14%;
+        top: 540%;
+    }
+    .Kids {
+        position: absolute;
+        left: 8%;
+        top: 430%;
+    }
+    .Gift { 
+        position: absolute;
+        top: 395%;
+        left: 22%;
+    }
+    #Bell { 
+        left: 35%;
+        top: 449%;
+    }
 }
-.navuser .fa-gift { font-size: 28px; }
-
-.navuser span , .navuser .fa-gift { margin-right: 20px; }
-
-.navuser .fa-bell { margin-right: 30px; }
-.user {
-    width: 2.5%;
-    border-radius: 5px;
-    margin-right: 10px;
-    cursor: pointer;
+@media(min-width: 992px) and (max-width: 1199px) {
+    .d-flex i {
+        right: 23.5%;
+        top: 40%;
+    }
+    #Bell { right: 9.5%; }
 }
