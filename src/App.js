@@ -25,7 +25,7 @@ import Home from "./components/Home/home";
 import Account from './components/Account/account';
 
 function App() {
-  if (!localStorage.token)
+  if (localStorage.token)
     return <Home/>
   else
     return <NoAuth/>
