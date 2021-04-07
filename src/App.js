@@ -21,14 +21,23 @@ import Step2Of3 from "./components/step2of3/step2of3";
 import Plans from "./components/plans/plans";
 import Login from "./components/Login/Login";
 import Landing from './components/Landing/Landing';
+import Video from "./components/video/videoPlayer";
 import Home from "./components/Home/home";
-import Account from './components/Account/account';
 
 function App() {
   if (localStorage.token)
-    return <Home/>
+    return (
+        <Router>
+          <switch>
+            <Route path={"/video"}  component={Video}/>
+            <Route exact path={"/"} component={Home}/>
+
+          </switch>
+        </Router>
+    )
   else
     return <NoAuth/>
+
 
 
 }
