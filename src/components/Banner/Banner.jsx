@@ -68,6 +68,10 @@ export default Banner
 
 function MydModalWithGrid(props) {
     const [movie, setMovie] = useState([]);
+    const [lgShow, setLgShow] = useState(false);
+    const like=movie.likes;
+    const dislike=movie.disLikes;
+    const average=Math.round(like/(dislike+like))*100;
     useEffect(()=>{
       async function fetchData(){
         const request = await axios.get(requests.fetchBanner);
@@ -80,8 +84,11 @@ function MydModalWithGrid(props) {
     function trancate(str,n){
         return str?.length >n ?str.substr(0,n-1)+"...":str;
     }
+    
+    
   return (
-    <Modal {...props} aria-labelledby="contained-modal-title-vcenter " style={{marginTop:'100px',color:'black',border:'none'}}>
+    
+    <Modal size="lg" show={lgShow} onHide={() => setLgShow(false)} aria-labelledby="example-modal-sizes-title-lg" {...props}  style={{marginTop:'100px',color:'black',border:'none'}}>
       {/* <Modal.Header closeButton>
         
       </Modal.Header> */}
@@ -103,10 +110,10 @@ function MydModalWithGrid(props) {
                     <i class="fa fa-play-circle fa-2x"></i>
                     </div>
                     <div className='icoon'>
-                    <i class="fa fa-thumbs-up"></i>{movie.likes} 
+                    <i class="fa fa-thumbs-up"></i> 
                     </div>
                      <div className='icoon'>
-                   <i class="fa fa-thumbs-down"></i>{movie.disLikes} 
+                   <i class="fa fa-thumbs-down"></i> 
                     </div>
                     
                     
@@ -126,16 +133,32 @@ function MydModalWithGrid(props) {
 
           <Row>
             <Col xs={8} md={7}>
-              <p className='watch'><span className='watching'>98% Match </span><span className='year'>2020 </span><span className='age'>{movie.maturity_rating} <br/></span><span className='season'> 3 season </span></p>
+              <p className='watch'><span className='watching'>{average}% Match </span><span className='year'>2020 </span><span className='age'>{movie.maturity_rating} <br/></span><span className='season'> 3 season </span></p>
               <p className='top10'>Top 10 in EGYPT</p>
-              <p className='overview'> {trancate(movie?.overview,80)}</p>
+              <p className='overview'> {trancate(movie?.Description,90)}</p>
             </Col>
             <Col xs={4} md={5}>
-            <div className='cast'><span className='sp1'>Cast: </span>{movie.Actors}</div>
-            <div className='geners'><span className='sp2'>Geners: </span>{movie.Categories}</div>
+            <div className='cast'><span className='sp1'>Cast: </span>{movie.Actors && movie.Actors.join(", ")}</div>
+            <div className='geners'><span className='sp2'>Geners: </span>{movie.Categories && movie.Categories.join(", ")}</div>
             <div className='show'><span className='sp3'>This show is: </span> suspenseful</div>
 
               
+            </Col>
+            
+          </Row>
+          <Row className="series">
+            <Col className="series-poster" xs={4} md={3}>
+              <img src={movie.poster} alt={movie.name}/>
+            </Col>
+            <Col xs={8} md={9}>
+              <Row>
+              <Col xs={9} md={9}>{movie.name}</Col>
+              <Col xs={4} md={3}>58 min</Col>
+
+              </Row>
+              <Row>
+                <Col xs={12} md={12} className="series-description">{trancate(movie?.Description,80)}</Col>
+              </Row>
             </Col>
             
           </Row>

@@ -41,6 +41,9 @@ function Raw({title,fetchUrl,isLargeRow}){
 }
 export function Movie(props) {
     const [style, setStyle] = useState({display: 'none'});
+    const like=props.movie.likes;
+    const dislike=props.movie.disLikes;
+    const average=Math.round(like/(dislike+like))*100;
     return (
     
         <div style={{position:"inherit"}}>
@@ -59,12 +62,12 @@ export function Movie(props) {
                         <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet"></link>
                         <i class="fa fa-play-circle fa-2x"></i>
                         <i class="fal fa-plus-circle fa-2x"></i>
-                        <i class="fal fa-thumbs-up fa-2x"></i>{props.movie.likes}       
-                        <i class="fal fa-thumbs-down fa-2x"></i>{props.movie.dislikes}
+                        <i class="fal fa-thumbs-up fa-2x"></i>      
+                        <i class="fal fa-thumbs-down fa-2x"></i>
                         <i class="fal fa-chevron-circle-down fa-2x"></i>
                     </div>
                     <div id='watch'>
-                        <span id='match'>98% Match </span>
+                        <span id='match'>{average} % Match </span>
                         <span id='age'>{props.movie.maturity_rating}</span>
                         <span id='season'> 3 Seasons </span>
                     </div>
