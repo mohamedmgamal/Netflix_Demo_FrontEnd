@@ -148,3 +148,12 @@
 .display-4 {
   padding: 20px;
 }
+.series {
+}
+.series-poster {
+  margin: 0;
+  padding-top: 20px;
+}
+.series-description {
+  margin-top: 0;
+}
