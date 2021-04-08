@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from './axios'
 import './Raw.css';
 import MydModalWithGrid from "../Banner/Model";
+import {Link} from "react-router-dom";
 
 
 
@@ -62,7 +63,10 @@ export function Movie(props) {
                     </video>
                     <div className="icons">
                         <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet"></link>
-                        <i class="fa fa-play-circle fa-2x"></i>
+                        <Link to={{
+                            pathname: '/video',
+                            search: '?Movie'+props.movie.name,
+                            movie:  props.movie }}class="fa fa-play-circle fa-2x"></Link>
                         <i class="fal fa-plus-circle fa-2x"></i>
                         <i class="fal fa-thumbs-up fa-2x"></i>      
                         <i class="fal fa-thumbs-down fa-2x"></i>
