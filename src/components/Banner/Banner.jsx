@@ -5,6 +5,7 @@ import './Banner.css';
 
 import {Modal,Button,Row,Col,Form,Container} from 'react-bootstrap';
 import MydModalWithGrid from "./Model";
+import {Link} from "react-router-dom";
 
 
 function Banner() {
@@ -32,7 +33,7 @@ function Banner() {
             {movie.trailer && <div>
                 <section id='jumtron' className='pb-5'>
                     <div className='jumbotron jumbotron-fluid col-12' style={{height: "100vh"}}>
-                        <video autoPlay muted loop preload="metadata" poster={movie.poster}>
+                        <video autoPlay muted loop poster={movie.poster}>
                             <source src={movie.trailer} type='video/mp4'></source>
                         </video>
                         <div className='container co text-light ' style={{marginLeft: "0%", marginTop: "20%"}}>
@@ -40,9 +41,12 @@ function Banner() {
                                 <img src={movie.bigPoster} alt={movie.name}/>
                             </div>
                             <div className="banner_buttons row">
-                                <button className="banner_buttona ">
+                                <Link to={{
+                                    pathname: '/video',
+                                    search: '?Movie'+movie.name,
+                                    movie:  movie }}  className="banner_buttona ">
                                     <i class="fa fa-play"></i> Play
-                                </button>
+                                </Link>
                                 <button className="banner_button " onClick={() => setModalShow(true)}>
                                     <i class="fa fa-info-circle"></i> more info
                                 </button>

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import axios from "../Raw/axios";
 import requests from "../Home/requests";
 import {Col, Modal, Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 function MydModalWithGrid(props) {
     const [movie, setMovie] = useState(props.movie);
@@ -44,7 +45,10 @@ function MydModalWithGrid(props) {
                                     </h1>
                                     <div className="popup_buttons row">
                                         <div className="icoon">
-                                            <i class="fa fa-play-circle fa-2x"></i>
+                                            <Link to={{
+                                                pathname: '/video',
+                                                search: '?Movie'+props.movie.name,
+                                                movie:  props.movie }} class="fa fa-play-circle fa-2x"></Link>
                                         </div>
                                         <div className='icoon'>
                                             <i class="fa fa-thumbs-up"></i>
