@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from './axios'
 import './Raw.css';
-import MydModalWithGrid from '../Banner/Banner.jsx'
+import MydModalWithGrid from "../Banner/Model";
 
 
 
@@ -9,7 +9,6 @@ const base_url="https://image.tmdb.org/t/p/original/"
 
 function Raw({title,fetchUrl,isLargeRow}){
     const [movies,setMovies]=useState([]);
-    
 
 
     useEffect(()=>{
@@ -67,7 +66,7 @@ export function Movie(props) {
                         <i class="fal fa-plus-circle fa-2x"></i>
                         <i class="fal fa-thumbs-up fa-2x"></i>      
                         <i class="fal fa-thumbs-down fa-2x"></i>
-                        <i class="fal fa-chevron-circle-down fa-2x"  onClick={() => setModalShow(true)}></i>
+                        <i class="fal fa-chevron-circle-down fa-2x" onClick={()=>{setModalShow(true);setStyle({display: "none"})}}></i>
                     </div>
                     <div id='watch'>
                         <span id='match'>{average} % Match </span>
@@ -79,6 +78,7 @@ export function Movie(props) {
                         <span id="scary">{props.movie.Categories[1]}</span>
                         <span id="horror">{props.movie.Categories[2]}</span>
                     </div>
+                    <MydModalWithGrid show={modalShow} movie={props.movie} onHide={() => setModalShow(false)} />
                 </div>
 
 
@@ -96,9 +96,7 @@ export function Movie(props) {
                 //     props.isLargeRow ? props.movie.poster_path : props.movie.backdrop_path}`}
                 src={props.movie.poster}
                 alt={props.movie.name}
-            />
-             <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
-            </div>
+            /></div>
     )
 }
 export default Raw;

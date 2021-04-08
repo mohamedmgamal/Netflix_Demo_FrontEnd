@@ -2,33 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/122342.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/25377-7-pause-button-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/25569-6-play-button-transparent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/3861.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/Sgare-White-Icon-PNG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/fast-forward-icon-18-256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/fowrad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/fullscreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/fullscreen_white_192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/ic_play_circle_filled_white_48px-512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/mulan.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/mute-xxl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/pause-icon-18-256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/rewind-icon-18-256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/share.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/startstop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/stop-icon-18-256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/video/images/volume-up-4-xxl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Banner/Model.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Account/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/account.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Banner.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Raw/Raw.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Raw/Raw.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/paymentForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Raw/Raw.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Raw/Raw.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/video/videoPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/video/videoPlayer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +118,9 @@
       <workItem from="1617622331980" duration="739000" />
       <workItem from="1617661073954" duration="1704000" />
       <workItem from="1617703805314" duration="16410000" />
+      <workItem from="1617813302753" duration="974000" />
+      <workItem from="1617835560510" duration="2487000" />
+      <workItem from="1617872380174" duration="1492000" />
     </task>
     <servers />
   </component>
