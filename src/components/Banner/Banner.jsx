@@ -62,11 +62,11 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Banner;
 
 
 
-function MydModalWithGrid(props) {
+export function MydModalWithGrid(props) {
     const [movie, setMovie] = useState([]);
     const [lgShow, setLgShow] = useState(false);
     const like=movie.likes;
@@ -172,3 +172,4 @@ function MydModalWithGrid(props) {
     </Modal>
   );
 }
+ 
