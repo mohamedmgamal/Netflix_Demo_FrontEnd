@@ -9,7 +9,7 @@ function MydModalWithGrid(props) {
     const [lgShow, setLgShow] = useState(false);
     const [like,setLike] =useState(movie.likes);
     const [dislike,setDislike]=useState(movie.disLikes);
-    const average=useState(Math.round(like/(dislike+like))*100);
+    const [average,setAverage]=useState(((like/(dislike+like))*100).toFixed());
 
 
 
@@ -56,12 +56,18 @@ function MydModalWithGrid(props) {
                                         <div className='icoon'>
                                             <i class="fa fa-thumbs-up" onClick={()=>{
                                                 setLike(like+1)
+                                                console.log("likes : "+like)
+                                                console.log("dislike : "+dislike)
+                                                setAverage(((like/(dislike+like))*100).toFixed())
+                                                console.log("average : "+average)
                                                 var requestOptions = {
                                                     method: 'GET',
-                                                    redirect: 'follow'
+                                                    redirect: 'follow',
+                                                    headers: {
+                                                        'Authorization': 'token '+localStorage.token}
                                                   };
                                                   
-                                                  fetch("https://netflix-clone-iti.herokuapp.com/like/"+ props.movie.id, requestOptions)
+                                                  fetch("https://agile-wildwood-89087.herokuapp.com/https://netflix-clone-iti.herokuapp.com/like/"+ props.movie.id, requestOptions)
                                                     .then(response => response.text())
                                                     .then(result => console.log(result))
                                                     .catch(error => console.log('error', error));
@@ -69,14 +75,18 @@ function MydModalWithGrid(props) {
                                         </div>
                                         <div className='icoon'>
                                             <i class="fa fa-thumbs-down" onClick={()=>{
-                                                
                                                 setDislike(dislike+1)
+                                                console.log("likes : "+like)
+                                                console.log("dislike : "+dislike)
+                                                setAverage(((like/(dislike+like))*100).toFixed())
                                                 var requestOptions = {
                                                     method: 'GET',
-                                                    redirect: 'follow'
+                                                    redirect: 'follow',
+                                                    headers: {
+                                                        'Authorization': 'token '+localStorage.token}
                                                   };
                                                   
-                                                  fetch("https://netflix-clone-iti.herokuapp.com/disLike/"+ props.movie.id, requestOptions)
+                                                  fetch("https://agile-wildwood-89087.herokuapp.com/https://netflix-clone-iti.herokuapp.com/disLike/"+ props.movie.id, requestOptions)
                                                     .then(response => response.text())
                                                     .then(result => console.log(result))
                                                     .catch(error => console.log('error', error));

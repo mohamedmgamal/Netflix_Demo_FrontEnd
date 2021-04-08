@@ -44,9 +44,9 @@ function Raw({title,fetchUrl,isLargeRow}){
 export function Movie(props) {
     const [style, setStyle] = useState({display: 'none'});
     const [modalShow, setModalShow] = useState(false);
-    const [like,setLike] =useState(movie.likes);
-    const [dislike,setDislike]=useState(movie.disLikes);
-    const average=Math.round(like/(dislike+like))*100;
+    const [like,setLike] =useState(props.movie.likes);
+    const [dislike,setDislike]=useState(props.movie.disLikes);
+    const [average,setAverage]=useState(((like/(dislike+like))*100).toFixed());
     return (
     
         <div style={{position:"inherit"}}>
@@ -70,22 +70,32 @@ export function Movie(props) {
                         <i class="fal fa-plus-circle fa-2x"></i>
                         <i class="fal fa-thumbs-up fa-2x" onClick={()=>{
                                                 setLike(like+1)
+                            console.log("likes : "+like)
+                            console.log("dislike : "+dislike)
+                                                 setAverage(((like/(dislike+like))*100).toFixed())
                                                 var requestOptions = {
                                                     method: 'GET',
-                                                    redirect: 'follow'
-                                                  };
+                                                    redirect: 'follow',
+                                                    headers: {
+                                                        'Authorization': 'token '+localStorage.token}
+
+                                                };
                                                   
-                                                  fetch("https://netflix-clone-iti.herokuapp.com/like/"+ props.movie.id, requestOptions)
+                                                  fetch("https://agile-wildwood-89087.herokuapp.com/https://netflix-clone-iti.herokuapp.com/like/"+ props.movie.id, requestOptions)
                                                     .then(response => response.text())
                                                     .then(result => console.log(result))
                                                     .catch(error => console.log('error', error));
                                             }}></i>      
                         <i class="fal fa-thumbs-down fa-2x" onClick={()=>{
-                                                
                                                 setDislike(dislike+1)
+                            console.log("likes : "+like)
+                            console.log("dislike : "+dislike)
+                                            setAverage(((like/(dislike+like))*100).toFixed())
                                                 var requestOptions = {
                                                     method: 'GET',
-                                                    redirect: 'follow'
+                                                    redirect: 'follow',
+                                                    headers: {
+                                                        'Authorization': 'token '+localStorage.token}
                                                   };
                                                   
                                                   fetch("https://netflix-clone-iti.herokuapp.com/disLike/"+ props.movie.id, requestOptions)

@@ -65,7 +65,7 @@ class Phone extends Component{
                     success=false
                   });
             if (success)
-            { this.state.user.phoneNumber=this.state.phoneNumber;
+            { //this.state.user.phoneNumber=this.state.phoneNumber;
                 this.next()}};
     render() {
         return (
@@ -75,17 +75,17 @@ class Phone extends Component{
                  <div className="row">
                      <div className="text-left">
                      
-                          <h1 style={{fontWeight:"bold",textAlign:"center"}} >Welcome to Netflix!</h1>
-                            <p>You've started your membership and we emaild the details to you</p>
+                          <h1 style={{color:"#E50913",fontWeight:"bold",textAlign:"center"}} >Welcome to Netflix!</h1>
+                            <p style={{color:"black"}}className="text-center">You've started your membership and we emaild the details to you</p>
                             
                         <div className="sec">
-                            <h6 className="text-center hed" >SETUP PASSWORD RECOVERY</h6>
-                          <p>Your phone number will be used if you forget your password and for important account message</p>
+                            <h6 className="text-center hed" style={{fontWeight:"bold"}} >SETUP PASSWORD RECOVERY</h6>
+                          <p style={{color:"black"}}>Your phone number will be used if you forget your password and for important account message</p>
                           <p></p>
                           <form  onSubmit={this.onSignInSubmit}>
                              
                               <div className="form-group">
-                                  <label>Phone Number</label>
+                                  <label style={{color:"#E50913",fontWeight:"bold"}}>Phone Number</label>
                                   <input type="number" className="form-control in" name="phoneNumber" onChange={this.onChangeHandler}></input>
                               </div>
                               <div id="recaptcha-container">
@@ -99,10 +99,10 @@ class Phone extends Component{
                                 
                           </form>   
                           
-                          <form  onSubmit={this.next}>
+                          <form  onSubmit={this.onSubmitOtp}>
                              
                               <div className="form-group">
-                                  <label>Please Enter OTP</label>
+                                  <label style={{color:"#E50913",fontWeight:"bold"}}>Please Enter OTP</label>
                                   <input type="number" className="form-control in " name="otp" onChange={this.onChangeHandler}></input>
                               </div>
                               
