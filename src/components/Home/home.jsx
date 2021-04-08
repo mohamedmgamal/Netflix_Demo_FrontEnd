@@ -5,8 +5,6 @@ import Banner from '../Banner/Banner'
 
 import requests from './requests';
 import Navbar from "../Navbar/navbar";
-
-
 function Home(){
     return(
        <div style={{background:"black",paddingBottom:"10%"}}>

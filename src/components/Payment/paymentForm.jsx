@@ -78,6 +78,7 @@ function PaymentForm(props){
      fetch(urls.HomeUrl+"/getId/"+props.location.user.username)
          .then(response => response.json())
          .then(data =>{
+             localStorage.userId=data.id
                 doPayment(data.id)
          }).catch((error) => {
          setMassage(error)

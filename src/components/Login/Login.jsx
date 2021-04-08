@@ -34,7 +34,15 @@ login=()=>{
         .then(data => {
          if (data.token){
              localStorage.token=data.token;
-             window.open("http://localhost:3000","_self")
+             fetch('https://netflix-clone-iti.herokuapp.com/getId/'+this.state.username)
+                 .then(response => response.json())
+                 .then(json =>{
+                                localStorage.userId=json.id
+                     window.open("http://localhost:3000","_self")
+                 })
+                 .catch(Error=>
+                 console.log(Error));
+
          }
          else {
             this.setState({message:"Wrong password or UserName"})

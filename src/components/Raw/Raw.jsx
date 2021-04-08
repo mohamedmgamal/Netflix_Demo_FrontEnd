@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from './axios'
 import './Raw.css';
+import MydModalWithGrid from "../Banner/Model";
 
 
 
@@ -41,6 +42,7 @@ function Raw({title,fetchUrl,isLargeRow}){
 }
 export function Movie(props) {
     const [style, setStyle] = useState({display: 'none'});
+    const [modalShow, setModalShow] = useState(false);
     const like=props.movie.likes;
     const dislike=props.movie.disLikes;
     const average=Math.round(like/(dislike+like))*100;
@@ -64,7 +66,7 @@ export function Movie(props) {
                         <i class="fal fa-plus-circle fa-2x"></i>
                         <i class="fal fa-thumbs-up fa-2x"></i>      
                         <i class="fal fa-thumbs-down fa-2x"></i>
-                        <i class="fal fa-chevron-circle-down fa-2x"></i>
+                        <i class="fal fa-chevron-circle-down fa-2x" onClick={()=>{setModalShow(true);setStyle({display: "none"})}}></i>
                     </div>
                     <div id='watch'>
                         <span id='match'>{average} % Match </span>
@@ -76,6 +78,7 @@ export function Movie(props) {
                         <span id="scary">{props.movie.Categories[1]}</span>
                         <span id="horror">{props.movie.Categories[2]}</span>
                     </div>
+                    <MydModalWithGrid show={modalShow} movie={props.movie} onHide={() => setModalShow(false)} />
                 </div>
 
 
