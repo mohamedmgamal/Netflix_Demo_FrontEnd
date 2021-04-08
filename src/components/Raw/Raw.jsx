@@ -44,8 +44,8 @@ function Raw({title,fetchUrl,isLargeRow}){
 export function Movie(props) {
     const [style, setStyle] = useState({display: 'none'});
     const [modalShow, setModalShow] = useState(false);
-    const like=props.movie.likes;
-    const dislike=props.movie.disLikes;
+    const [like,setLike] =useState(movie.likes);
+    const [dislike,setDislike]=useState(movie.disLikes);
     const average=Math.round(like/(dislike+like))*100;
     return (
     
@@ -68,8 +68,31 @@ export function Movie(props) {
                             search: '?Movie'+props.movie.name,
                             movie:  props.movie }}class="fa fa-play-circle fa-2x"></Link>
                         <i class="fal fa-plus-circle fa-2x"></i>
-                        <i class="fal fa-thumbs-up fa-2x"></i>      
-                        <i class="fal fa-thumbs-down fa-2x"></i>
+                        <i class="fal fa-thumbs-up fa-2x" onClick={()=>{
+                                                setLike(like+1)
+                                                var requestOptions = {
+                                                    method: 'GET',
+                                                    redirect: 'follow'
+                                                  };
+                                                  
+                                                  fetch("https://netflix-clone-iti.herokuapp.com/like/"+ props.movie.id, requestOptions)
+                                                    .then(response => response.text())
+                                                    .then(result => console.log(result))
+                                                    .catch(error => console.log('error', error));
+                                            }}></i>      
+                        <i class="fal fa-thumbs-down fa-2x" onClick={()=>{
+                                                
+                                                setDislike(dislike+1)
+                                                var requestOptions = {
+                                                    method: 'GET',
+                                                    redirect: 'follow'
+                                                  };
+                                                  
+                                                  fetch("https://netflix-clone-iti.herokuapp.com/disLike/"+ props.movie.id, requestOptions)
+                                                    .then(response => response.text())
+                                                    .then(result => console.log(result))
+                                                    .catch(error => console.log('error', error));
+                                            }}></i>
                         <i class="fal fa-chevron-circle-down fa-2x" onClick={()=>{setModalShow(true);setStyle({display: "none"})}}></i>
                     </div>
                     <div id='watch'>
@@ -104,4 +127,3 @@ export function Movie(props) {
     )
 }
 export default Raw;
-// 

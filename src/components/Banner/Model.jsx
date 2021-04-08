@@ -7,9 +7,12 @@ import {Link} from "react-router-dom";
 function MydModalWithGrid(props) {
     const [movie, setMovie] = useState(props.movie);
     const [lgShow, setLgShow] = useState(false);
-    const like=movie.likes;
-    const dislike=movie.disLikes;
-    const average=Math.round(like/(dislike+like))*100;
+    const [like,setLike] =useState(movie.likes);
+    const [dislike,setDislike]=useState(movie.disLikes);
+    const average=useState(Math.round(like/(dislike+like))*100);
+
+
+
     // useEffect(()=>{
     //     async function fetchData(){
     //         const request = await axios.get(requests.fetchBanner);
@@ -51,10 +54,33 @@ function MydModalWithGrid(props) {
                                                 movie:  props.movie }} class="fa fa-play-circle fa-2x"></Link>
                                         </div>
                                         <div className='icoon'>
-                                            <i class="fa fa-thumbs-up"></i>
+                                            <i class="fa fa-thumbs-up" onClick={()=>{
+                                                setLike(like+1)
+                                                var requestOptions = {
+                                                    method: 'GET',
+                                                    redirect: 'follow'
+                                                  };
+                                                  
+                                                  fetch("https://netflix-clone-iti.herokuapp.com/like/"+ props.movie.id, requestOptions)
+                                                    .then(response => response.text())
+                                                    .then(result => console.log(result))
+                                                    .catch(error => console.log('error', error));
+                                            }}></i>
                                         </div>
                                         <div className='icoon'>
-                                            <i class="fa fa-thumbs-down"></i>
+                                            <i class="fa fa-thumbs-down" onClick={()=>{
+                                                
+                                                setDislike(dislike+1)
+                                                var requestOptions = {
+                                                    method: 'GET',
+                                                    redirect: 'follow'
+                                                  };
+                                                  
+                                                  fetch("https://netflix-clone-iti.herokuapp.com/disLike/"+ props.movie.id, requestOptions)
+                                                    .then(response => response.text())
+                                                    .then(result => console.log(result))
+                                                    .catch(error => console.log('error', error));
+                                            }}></i>
                                         </div>
 
 
