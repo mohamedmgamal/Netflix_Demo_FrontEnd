@@ -66,7 +66,7 @@ export function Movie(props) {
                         <Link to={{
                             pathname: '/video',
                             search: '?Movie'+props.movie.name,
-                            movie:  props.movie }}class="fa fa-play-circle fa-2x"></Link>
+                            src:  props.movie.trailer }}class="fa fa-play-circle fa-2x"></Link>
                         <i class="fal fa-plus-circle fa-2x"></i>
                         <i class="fal fa-thumbs-up fa-2x" onClick={()=>{
                                                 setLike(like+1)
@@ -115,7 +115,7 @@ export function Movie(props) {
                         <span id="scary">{props.movie.Categories[1]}</span>
                         <span id="horror">{props.movie.Categories[2]}</span>
                     </div>
-                    <MydModalWithGrid show={modalShow} movie={props.movie} onHide={() => setModalShow(false)} />
+                    {modalShow && <MydModalWithGrid show={modalShow} movie={props.movie} onHide={() => setModalShow(false)} />}
                 </div>
 
 

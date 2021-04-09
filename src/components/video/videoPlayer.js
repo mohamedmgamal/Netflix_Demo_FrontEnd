@@ -1,7 +1,7 @@
 import React,{ useState , useEffect } from 'react';
 import QierPlayer from 'qier-player';
 function Video(props){
-    const [src,setSrc]=useState(props.location.movie.trailer)
+    const [src,setSrc]=useState(props.location.src)
     return(
     <QierPlayer
         themeColor={"#af0c14"}

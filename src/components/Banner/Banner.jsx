@@ -43,8 +43,9 @@ function Banner() {
                             <div className="banner_buttons row">
                                 <Link to={{
                                     pathname: '/video',
-                                    search: '?Movie'+movie.name,
-                                    movie:  movie }}  className="banner_buttona ">
+                                    search: '?Movie' + movie.name,
+                                    src:  movie.trailer
+                                }} className="banner_buttona ">
                                     <i class="fa fa-play"></i> Play
                                 </Link>
                                 <button className="banner_button " onClick={() => setModalShow(true)}>
@@ -60,7 +61,7 @@ function Banner() {
                     </div>
                 </section>
 
-                <MydModalWithGrid show={modalShow} movie={movie} onHide={() => setModalShow(false)}/>
+                {modalShow && <MydModalWithGrid show={modalShow} movie={movie} onHide={() => setModalShow(false)}/>}
             </div>}
         </React.Fragment>
 

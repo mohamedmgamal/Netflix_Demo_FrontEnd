@@ -3,25 +3,35 @@ import axios from "../Raw/axios";
 import requests from "../Home/requests";
 import {Col, Modal, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
+import "../../staticUrls"
+import {urls} from "../../staticUrls";
+import {Movie} from "../Raw/Raw";
 
 function MydModalWithGrid(props) {
     const [movie, setMovie] = useState(props.movie);
+    const [episodes, setEpisodes] = useState([]);
     const [lgShow, setLgShow] = useState(false);
     const [like,setLike] =useState(movie.likes);
     const [dislike,setDislike]=useState(movie.disLikes);
     const [average,setAverage]=useState(((like/(dislike+like))*100).toFixed());
+    useEffect(()=>{
+           fetchDate()
+    },[
+    ]);
+    async function fetchDate(){
+        var myHeaders = new Headers();
+        myHeaders.append("Authorization", "token "+localStorage.token);
+        var requestOptions = {
+            method: 'GET',
+            headers: myHeaders,
+            redirect: 'follow'
+        };
+        fetch("https://agile-wildwood-89087.herokuapp.com/https://netflix-clone-iti.herokuapp.com/getEp/"+movie.id+"/"+localStorage.userId , requestOptions)
+            .then(response => response.json())
+            .then(result => setEpisodes(result))
+            .catch(error => console.log('error', error));
 
-
-
-    // useEffect(()=>{
-    //     async function fetchData(){
-    //         const request = await axios.get(requests.fetchBanner);
-    //         console.log(request.data);
-    //         setMovie(request.data[0]);
-    //         return request;
-    //     }
-    //     fetchData();
-    // },[]);
+    }
     function trancate(str,n){
         return str?.length >n ?str.substr(0,n-1)+"...":str;
     }
@@ -51,7 +61,7 @@ function MydModalWithGrid(props) {
                                             <Link to={{
                                                 pathname: '/video',
                                                 search: '?Movie'+props.movie.name,
-                                                movie:  props.movie }} class="fa fa-play-circle fa-2x"></Link>
+                                                    src:  props.movie.trailer }} class="fa fa-play-circle fa-2x"></Link>
                                         </div>
                                         <div className='icoon'>
                                             <i class="fa fa-thumbs-up" onClick={()=>{
@@ -120,22 +130,26 @@ function MydModalWithGrid(props) {
                     </Col>
 
                 </Row>
+                {episodes && episodes.map( episode =>(
                 <Row className="series">
                     <Col className="series-poster" xs={4} md={3}>
-                        <img src={movie.poster} alt={movie.name}/>
+                        <Link to={{
+                            pathname: '/video',
+                            search: '?Movie'+props.movie.name+'S:'+episode.season+"E:"+episode.episode,
+                            src:  episode.link }}> <img src={movie.poster} alt={movie.name}/></Link>
                     </Col>
                     <Col xs={8} md={9}>
                         <Row>
-                            <Col xs={9} md={9}>{movie.name}</Col>
-                            <Col xs={4} md={3}>58 min</Col>
+                            <Col xs={9} md={9}>{episode.name}</Col>
+                            <Col xs={4} md={3} >{episode.duration}&nbsp;Min</Col>
 
                         </Row>
                         <Row>
-                            <Col xs={12} md={12} className="series-description">{trancate(movie?.Description,80)}</Col>
+                            <Col xs={12} md={12} className="series-description"><span>episode	&nbsp;:	&nbsp;{episode.episode}</span><br/><span>season	&nbsp;:	&nbsp;{episode.season}</span></Col>
                         </Row>
                     </Col>
 
-                </Row>
+                </Row>))}
 
 
 
