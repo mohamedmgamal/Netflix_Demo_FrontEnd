@@ -30,8 +30,8 @@ const NavBar = (props) => {
 					 alt='Netflix-Logo'
 				/>
             </NavbarBrand>
-            <NavbarToggler onClick={toggle} />
-            <Collapse isOpen={isOpen} navbar>
+            <NavbarToggler onClick={toggle}id="coll"/>
+            <Collapse isOpen={isOpen} navbar  style={{background:"black"}}>
                 <Nav className="mr-auto" navbar id="navlinks">
                     <NavItem>
                         <NavLink id="Homee" href="#">Home</NavLink>
