@@ -47,10 +47,11 @@
   position: absolute;
   top: -80%;
   left: -50%;
-  height: 60vh;
+
   background-color: rgb(32, 32, 32);
   margin: 0;
   padding: 0;
+  padding-bottom: 80%;
 }
 .miniHidden .video {
   width: 100%;

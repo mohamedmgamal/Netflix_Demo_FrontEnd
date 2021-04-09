@@ -4,8 +4,8 @@
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Banner/Model.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/Model.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Raw/Raw.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Raw/Raw.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/phone_varification/phone.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/phone_varification/phone.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Raw/Raw.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Raw/Raw.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staticUrls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/staticUrls.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,10 @@
       <workItem from="1617813302753" duration="974000" />
       <workItem from="1617835560510" duration="2487000" />
       <workItem from="1617872380174" duration="3958000" />
-      <workItem from="1617884015681" duration="2595000" />
+      <workItem from="1617884015681" duration="3101000" />
+      <workItem from="1617903864178" duration="2756000" />
+      <workItem from="1617977573914" duration="647000" />
+      <workItem from="1617981247483" duration="2507000" />
     </task>
     <servers />
   </component>

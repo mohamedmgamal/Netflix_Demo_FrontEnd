@@ -76,8 +76,6 @@ function MydModalWithGrid(props) {
                                         <div className='icoon'>
                                             <i class="fa fa-thumbs-down" onClick={()=>{
                                                 setDislike(dislike+1)
-                                                console.log("likes : "+like)
-                                                console.log("dislike : "+dislike)
                                                 setAverage(((like/(dislike+like))*100).toFixed())
                                                 var requestOptions = {
                                                     method: 'GET',
@@ -85,7 +83,6 @@ function MydModalWithGrid(props) {
                                                     headers: {
                                                         'Authorization': 'token '+localStorage.token}
                                                   };
-                                                  
                                                   fetch("https://agile-wildwood-89087.herokuapp.com/https://netflix-clone-iti.herokuapp.com/disLike/"+ props.movie.id, requestOptions)
                                                     .then(response => response.text())
                                                     .then(result => console.log(result))
