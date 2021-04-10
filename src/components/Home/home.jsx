@@ -7,6 +7,7 @@ import requests from './requests';
 import Navbar from "../Navbar/navbar";
 function Home(){
     return(
+
        <div style={{background:"black",paddingBottom:"10%"}}>
             <Navbar/>
             <div style={{margin:"0px",marginTop:"4%"}}>

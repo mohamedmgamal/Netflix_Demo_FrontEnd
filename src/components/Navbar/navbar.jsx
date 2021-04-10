@@ -24,7 +24,7 @@ const NavBar = (props) => {
   return (
     <React.Fragment>
         <Navbar id="homeNav" expand="md">
-            <NavbarBrand href="#">
+            <NavbarBrand zz>
                 <img className="NetflixLogo"
 					 src='https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg'
 					 alt='Netflix-Logo'
