@@ -50,8 +50,8 @@ const NavBar = (props) => {
                     </NavItem>
                 </Nav>
                 <form className="d-flex">
-                    <input className="form-control me-2" type="search" placeholder="Search.." aria-label="Search" />
-                    <i class="fa fa-search fa-lg"></i>
+                    <input className="form-control me-2"  type="search" placeholder="Search.." aria-label="Search" />
+                    <i style={{marginTop:".5%"}} class="fa fa-search fa-lg"></i>
                 </form>
                 <NavbarText className="Kids">Kids</NavbarText>
                 <NavbarText><i className="fa fa-gift fa-lg Gift"></i></NavbarText>   

@@ -2,7 +2,6 @@ import React from 'react';
 import './home.css';
 import Row from '../Raw/Raw';
 import Banner from '../Banner/Banner'
-
 import requests from './requests';
 import Navbar from "../Navbar/navbar";
 function Home(){
@@ -15,7 +14,6 @@ function Home(){
             </div>
            
         <div className="Home">
-            
             <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
             <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
             <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
