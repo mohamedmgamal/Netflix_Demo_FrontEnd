@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb5f1fff-69cc-48aa-9beb-ebb4752b679b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/choose category/choose.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/choose category/choose.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +123,7 @@
       <workItem from="1618052664976" duration="205000" />
       <workItem from="1618072987982" duration="126000" />
       <workItem from="1618139259997" duration="1565000" />
-      <workItem from="1618158096105" duration="491000" />
+      <workItem from="1618158096105" duration="846000" />
     </task>
     <servers />
   </component>
