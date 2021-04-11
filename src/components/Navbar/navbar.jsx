@@ -67,7 +67,10 @@ const NavBar = (props) => {
                         <DropdownItem id="DropdownItem">
                             Account
                         </DropdownItem>
-                        <DropdownItem id="DropdownItem">
+                        <DropdownItem id="DropdownItem" onClick={()=>{
+                            localStorage.removeItem("token")
+                            window.location.reload();
+                        }}>
                             Logout
                         </DropdownItem>
                     </DropdownMenu>

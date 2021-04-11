@@ -30,7 +30,7 @@ class Choose extends Component {
             count:this.state.count+1
         })}
     refresh=()=>{
-        window.open("http://localhost:3000/","_self")
+        window.open("https://netflix-iti.herokuapp.com/","_self")
     }
 
 
