@@ -26,7 +26,7 @@ function Raw({title,fetchUrl,isLargeRow}){
     console.log(movies);
     
     return(
-        <div className="row">
+        <div className="row ">
             <h2>{title}</h2>
             <div className="row__posters">
                 {movies && movies.map( movie =>(
