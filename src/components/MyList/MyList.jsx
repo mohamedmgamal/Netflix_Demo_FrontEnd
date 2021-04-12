@@ -37,7 +37,7 @@ function MyList({title,fetchUrl}) {
             <NavBar/>
                 <div className="row col-12 col-12x">
                     {movies&& movies.map( movie =>(
-                        <div className="col-2 col-2x"><Movie movie={movie.show}/></div>))}
+                        <div className="col-2 col-2x"><Movie movie={movie.show} date={movie.date}/></div>))}
                     }
                     
                     
@@ -121,7 +121,7 @@ export function Movie(props) {
                         <span id='season'> 3 Seasons </span>
                     </div>
                     <div id="category">
-                        {props.movie.categories && props.movie.categories.map( categorie =>(
+                        {props.movie.Categories && props.movie.Categories.map( categorie =>(
                             <span id="chilling">{categorie}</span>))}
                     </div>
                     {modalShow && <MydModalWithGrid show={modalShow} movie={props.movie} onHide={() => setModalShow(false)} />}
