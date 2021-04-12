@@ -66,8 +66,7 @@ const NavBar = (props) => {
                     </DropdownToggle>
                     <DropdownMenu id="DropdownMenu" left>
                         <DropdownItem id="DropdownItem">
-                            <Link to={"/Account"}> Account</Link>
-                        </DropdownItem>
+                            <Link to={"/Account"}> Account</Link></DropdownItem>
                         <DropdownItem id="DropdownItem" onClick={()=>{
                             localStorage.removeItem("token")
                             window.location.reload();
