@@ -39,13 +39,13 @@ function MyList({title,fetchUrl}) {
         return(
             <React.Fragment>
             <NavBar/>
-                <div className="row list-dark col-lg-11 col-xs-6">
+                <div className="row  list-dark col-lg-12 col-xs-12" style={{backgroundColor:"black",margin:"0px",paddingLeft:"5%",paddingBottom:"5%"}}>
                     {movies&& movies.map( movie =>(
-                        <Movie movie={movie.show} date={movie.date}/>))} 
+                        <Movie movie={movie.show} date={movie.date}/>))}
                         
                 </div>
                
-                <div className="footer-dark col-md-12">
+                <div className="footer-dark col-md-12" style={{paddingBottom:"1%"}}>
 
                 <div className="footer-container">
                     <div className="row line col-md-12 col-sm-8 col-xs-6">
@@ -83,20 +83,20 @@ function MyList({title,fetchUrl}) {
     
 }
 export function Movie(props) {
-    const [style, setStyle] = useState({display: 'none'});
+    const [style, setStyle] = useState({display: 'none',width:"80%"});
     const [modalShow, setModalShow] = useState(false);
     const [like,setLike] =useState(props.movie.likes);
     const [dislike,setDislike]=useState(props.movie.disLikes);
     const [average,setAverage]=useState(((like/(dislike+like))*100).toFixed());
-    const date=dateFormat(props.date,"mmmm dS, yyyy")
+    const date=dateFormat(props.date,"mmmm dS, yyyy , H:m")
     return (
     
         <div style={{position:"inherit", marginTop:"100px",marginLeft:"30px",marginRight:"15px"}}>
             <div className="HiddenDiv" style={style} onMouseLeave={e => {
-                setStyle({display: 'none'})
+                setStyle({display: 'none',width:"80%"})
             }}
                  onMouseEnter={event => {
-                     setStyle({display: ''}
+                     setStyle({display: '',width:"80%"}
                          )
                  }}>
                 <div className="miniHidden">
@@ -146,7 +146,7 @@ export function Movie(props) {
                                                     .then(result => console.log(result))
                                                     .catch(error => console.log('error', error));
                                             }}></i>
-                        <i class="fal fa-chevron-circle-down fa-2x" onClick={()=>{setModalShow(true);setStyle({display: "none"})}}></i>
+                        <i class="fal fa-chevron-circle-down fa-2x" onClick={()=>{setModalShow(true);setStyle({display: "none",width:"80%"})}}></i>
                     </div>
                     <div id='watch'>
                         <span id='match'>{average} % Match </span>
@@ -164,10 +164,10 @@ export function Movie(props) {
             </div>
             <img className="Raw-img list"
                 onMouseLeave={e => {
-                    setStyle({display: 'none'})
+                    setStyle({display: 'none',width:"80%"})
                 }}
                 onMouseEnter={event => {
-                    setStyle({display: ''},
+                    setStyle({display: '',width:"80%"},
                         console.log("enterd"))
                 }}
                 key={props.movie.id}
