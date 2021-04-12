@@ -35,7 +35,7 @@ const NavBar = (props) => {
             <Collapse isOpen={isOpen} navbar  style={{background:"black"}}>
                 <Nav className="mr-auto" navbar id="navlinks">
                     <NavItem>
-                        <NavLink id="Homee" href="#">Home</NavLink>
+                        <NavLink id="Homee" href="#"><Link to={"/"}>Home</Link></NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink href="#">TV Shows</NavLink>
@@ -66,7 +66,7 @@ const NavBar = (props) => {
                     </DropdownToggle>
                     <DropdownMenu id="DropdownMenu" left>
                         <DropdownItem id="DropdownItem">
-                            Account
+                           <Link to={"/Account"}> Account</Link>
                         </DropdownItem>
                         <DropdownItem id="DropdownItem" onClick={()=>{
                             localStorage.removeItem("token")

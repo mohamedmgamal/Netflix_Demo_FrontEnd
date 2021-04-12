@@ -37,7 +37,7 @@ function MyList({title,fetchUrl}) {
             <NavBar/>
                 <div className="row col-12 col-12x">
                     {movies&& movies.map( movie =>(
-                        <div className="col-2 col-2x"><Movie movie={movie.show}/></div>))}
+                        <div className="col-2 col-2x"><Movie movie={movie.show} date={movie.date}/></div>))}
                     }
                     
                     
