@@ -132,13 +132,13 @@ function MydModalWithGrid(props) {
                 </Row>
                 {episodes && episodes.map( episode =>(
                 <Row className="series">
-                    <Col className="series-poster" xs={4} md={3}>
+                    <Col className="series-poster" xs={6} sm={5} md={4}>
                         <Link to={{
                             pathname: '/video',
                             search: '?Movie'+props.movie.name+'S:'+episode.season+"E:"+episode.episode,
                             src:  episode.link }}> <img src={movie.poster} alt={movie.name}/></Link>
                     </Col>
-                    <Col xs={8} md={9}>
+                    <Col xs={6} sm={7} md={8}>
                         <Row>
                             <Col xs={9} md={9}>{episode.name}</Col>
                             <Col xs={4} md={3} >{episode.duration}&nbsp;Min</Col>
