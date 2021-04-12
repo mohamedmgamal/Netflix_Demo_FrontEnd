@@ -3,31 +3,42 @@ import './MyList.css'
 import axios from '../Raw/axios'
 import MydModalWithGrid from "../Banner/Model";
 import {Link} from "react-router-dom";
+import "../../staticUrls"
+import {urls} from "../../staticUrls";
+import NavBar from "../Navbar/navbar";
+import '../Banner/Banner.css'
+import '../Raw/Raw.css'
 function MyList({title,fetchUrl}) {
-    const [movies,setMovies]=useState([]);
+    const [movies,setMovies]=useState();
 
 
     useEffect(()=>{
         // if [],run once when the row loads and dont run again
        async function fetchData(){
-            const request=await axios.get(fetchUrl);
-            console.log(request.data)
-            setMovies(request.data)
-            return request;
+           var myHeaders = new Headers();
+           myHeaders.append("Authorization", "token "+localStorage.token);
+
+           var requestOptions = {
+               method: 'GET',
+               headers: myHeaders,
+               redirect: 'follow'
+           };
+
+           fetch("https://agile-wildwood-89087.herokuapp.com/https://netflix-clone-iti.herokuapp.com/history/"+localStorage.userId, requestOptions)
+               .then(response => response.json())
+               .then(result => setMovies(result))
+               .catch(error => console.log('error', error));
        } 
        fetchData();
     },[fetchUrl])
     
         return(
             <React.Fragment>
-            
-                <div className="row col-12">
-                    
-                    <div className="col-2">col</div>
-                    {/* <div className="col-2">col</div>
-                    <div className="col-2">col</div>
-                    <div className="col-2">col</div>
-                    <div className="col-2">col</div> */}
+            <NavBar/>
+                <div className="row col-12 col-12x">
+                    {movies&& movies.map( movie =>(
+                        <div className="col-2 col-2x"><Movie movie={movie.show}/></div>))}
+                    }
                     
                     
                 </div>
@@ -110,9 +121,8 @@ export function Movie(props) {
                         <span id='season'> 3 Seasons </span>
                     </div>
                     <div id="category">
-                        <span id="chilling">{props.movie.Categories[0]}</span>
-                        <span id="scary">{props.movie.Categories[1]}</span>
-                        <span id="horror">{props.movie.Categories[2]}</span>
+                        {props.movie.categories && props.movie.categories.map( categorie =>(
+                            <span id="chilling">{categorie}</span>))}
                     </div>
                     {modalShow && <MydModalWithGrid show={modalShow} movie={props.movie} onHide={() => setModalShow(false)} />}
                 </div>

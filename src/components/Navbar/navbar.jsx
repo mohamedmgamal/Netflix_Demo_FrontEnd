@@ -14,6 +14,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import {Link} from "react-router-dom";
 
 
 const NavBar = (props) => {
@@ -46,7 +47,7 @@ const NavBar = (props) => {
                         <NavLink href="#">New & Popular</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#">My List</NavLink>
+                        <NavLink href="#"><Link to={"/History"}>My List</Link></NavLink>
                     </NavItem>
                 </Nav>
                 <form className="d-flex">

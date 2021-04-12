@@ -23,7 +23,7 @@ import Login from "./components/Login/Login";
 import Landing from './components/Landing/Landing';
 import Video from "./components/video/videoPlayer";
 import Home from "./components/Home/home";
-// import MyList from "./components/MyList/MyList"
+ import MyList from "./components/MyList/MyList"
 
 function App() {
   if (localStorage.token)
@@ -32,7 +32,7 @@ function App() {
           <switch>
             <Route path={"/video"}  component={Video}/>
             <Route exact path={"/"} component={Home}/>
-
+            <Route path={"/History"} component={MyList}/>
           </switch>
         </Router>
     )
