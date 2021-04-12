@@ -23,6 +23,7 @@ import Login from "./components/Login/Login";
 import Landing from './components/Landing/Landing';
 import Video from "./components/video/videoPlayer";
 import Home from "./components/Home/home";
+// import MyList from "./components/MyList/MyList"
 
 function App() {
   if (localStorage.token)
