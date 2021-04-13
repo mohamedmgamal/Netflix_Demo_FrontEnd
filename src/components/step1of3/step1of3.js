@@ -11,9 +11,10 @@ class Step1Of3 extends React.Component{
         massage:''
     }
     componentDidMount() {
-        if (localStorage.tempemail){
-            this.setState({email:localStorage.tempemail})
-        }
+        if (this.props.location.email)
+            this.setState({email:this.props.location.email})
+        console.log(this.props.location.email)
+
     }
 
     handleChange=(e)=>{
@@ -24,6 +25,31 @@ class Step1Of3 extends React.Component{
         const Help = document.querySelector("#Help")
         if (this.state.email == "" || this.state.password == "" || this.state.username == "") {
             this.setState({massage:"All fields required"})
+            return
+        }
+        if (this.state.password.length<8)
+        {
+            this.setState({massage:"very short password"});
+            return
+        }
+        var regexUpper = "[A-Z]"; //Uppercase Alphabet.
+        var regexLower = "[a-z]"; //Lowercase Alphabet.
+        var refexDigit ="[0-9]"; //Digit.
+        var regexSC = "[$@$!%*#?&]"; //Special Character.
+        if (!new RegExp(regexUpper).test(this.state.password)){
+            this.setState({massage:"password must contain Upper Alphabets"});
+            return
+        }
+        if (!new RegExp(regexLower).test(this.state.password)){
+            this.setState({massage:"password must contain Lower Alphabets"});
+            return
+        }
+        if (!new RegExp(refexDigit).test(this.state.password)){
+            this.setState({massage:"password must contain Digits"});
+            return
+        }
+        if (!new RegExp(regexSC).test(this.state.password)){
+            this.setState({massage:"password must contain Special Character"});
             return
         }
        this.setState({message:"Checking UserName availability"})

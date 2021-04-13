@@ -29,7 +29,8 @@ class Landing extends Component {
                     <div className="input-group">
                         <input type="email" id="email1" className="form-control" placeholder="Enter your Email" aria-label="Input group example" aria-describedby="btnGroupAddon" onChange={this.onChangeHandler}/>
                         <div className="input-group-prepend">
-                            <div className="input-group-text" id="btnGroupAddon" style={{cursor: "grab"}}><Link to={"/signUp"} email={this.state.Email}>Start</Link></div>
+                            <div className="input-group-text" id="btnGroupAddon" style={{cursor: "grab"}}><Link to={{
+                                pathname: "/signUp",email:this.state.Email }}>Start</Link></div>
                         </div>
                     </div>
                 </div>

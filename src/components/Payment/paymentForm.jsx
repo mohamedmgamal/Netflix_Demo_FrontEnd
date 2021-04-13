@@ -11,7 +11,7 @@ function PaymentForm(props){
     const [ccv,setCCV]=useState("")
     const [date,setDate]=useState("")
  function next() {
-     var tDate = new Date().getFullYear()+'-'+(new Date().getMonth()+1)+'-'+new Date().getDate();
+     var tDate = new Date().getFullYear()+'-'+new Date().getMonth()+'-'+new Date().getDate();
         if (firstName==""||lastName==""||cardNumber==""||ccv==""||date=="")
         {
             setMassage("All fields required ")
@@ -22,7 +22,7 @@ function PaymentForm(props){
             setMassage("Invalid credit card number")
             return
         }
-     if( date >=tDate ) {
+     if(  date < tDate ) {
          setMassage("expired credit card ")
          return
      }
@@ -47,7 +47,7 @@ function PaymentForm(props){
          password:props.location.user.password,
      email:props.location.user.email,
      first_name:firstName,
-         PhoneNumber:"01212374338",
+         PhoneNumber:props.location.user.phoneNumber,
          last_name:lastName,
          cdNumber:cardNumber,
          cdDate:datee,
