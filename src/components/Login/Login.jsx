@@ -38,7 +38,7 @@ login=()=>{
                  .then(response => response.json())
                  .then(json =>{
                                 localStorage.userId=json.id
-                     window.open("https://netflix-iti.herokuapp.com/","_self")
+                     window.open("http://localhost:3000","_self")
                  })
                  .catch(Error=>
                  console.log(Error));
