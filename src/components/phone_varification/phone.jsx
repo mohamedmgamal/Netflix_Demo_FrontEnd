@@ -99,7 +99,7 @@ class Phone extends Component{
                                 
                           </form>   
                           
-                          <form  onSubmit={this.onSubmitOtp}>
+                          <form  onSubmit={this.next}>
                              
                               <div className="form-group">
                                   <label style={{color:"#E50913",fontWeight:"bold"}}>Please Enter OTP</label>
